@@ -2,81 +2,82 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof. Gabriel - Página Inicial</title>
+    <title>Portal da Turma - Prof. Gabriel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
             margin: 0;
             padding: 0;
-            background: #f0f4f8;
-            color: #333;
         }
+
         header {
             background-color: #004080;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-        nav {
-            background-color: #003366;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 10px 0;
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
         }
-        nav a {
+
+        .aluno-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .aluno-btn {
+            background-color: #007acc;
             color: white;
-            text-decoration: none;
-            font-weight: bold;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        .aluno-btn:hover {
+            background-color: #005f99;
         }
-        main {
-            padding: 40px 20px;
-            text-align: center;
-        }
+
         footer {
+            text-align: center;
             background-color: #004080;
             color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
+            padding: 10px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo à Página do Prof. Gabriel</h1>
-        <p>Ensino de Informática, Desenvolvimento Web e muito mais!</p>
+        <h1>Portal da Turma - Prof. Gabriel</h1>
+        <p>Escolha o nome de um aluno para acessar sua página</p>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Aulas</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contato</a>
-    </nav>
-
-    <main>
-        <div class="container">
-            <h2>Olá, alunos e visitantes!</h2>
-            <p>Este é um espaço onde você encontrará materiais das aulas, atividades, avisos importantes e conteúdos de apoio.</p>
-            <p>Fique à vontade para explorar e aprender!</p>
+    <div class="container">
+        <div class="aluno-grid">
+            <button class="aluno-btn" onclick="location.href='alunos/ana.html'">Ana</button>
+            <button class="aluno-btn" onclick="location.href='alunos/bruno.html'">Bruno</button>
+            <button class="aluno-btn" onclick="location.href='alunos/carla.html'">Carla</button>
+            <button class="aluno-btn" onclick="location.href='alunos/davi.html'">Davi</button>
+            <button class="aluno-btn" onclick="location.href='alunos/ellen.html'">Ellen</button>
+            <button class="aluno-btn" onclick="location.href='alunos/felipe.html'">Felipe</button>
+            <button class="aluno-btn" onclick="location.href='alunos/gustavo.html'">Gustavo</button>
+            <button class="aluno-btn" onclick="location.href='alunos/helena.html'">Helena</button>
+            <!-- Adicione mais nomes conforme necessário -->
         </div>
-    </main>
+    </div>
 
     <footer>
-        &copy; 2025 Prof. Gabriel | Todos os direitos reservados
+        &copy; 2025 Prof. Gabriel | Turma de Informática
     </footer>
 
 </body>
