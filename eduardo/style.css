@@ -1,0 +1,12 @@
+.bacon p{
+    color: blue;
+}
+.pessoa p{
+    color: red;
+}
+.paragrafoTres p{
+    color: red;
+}
+body {
+    background-color: black;
+}
