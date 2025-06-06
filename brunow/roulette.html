@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roulette Casino Game</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #043927;
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        user-select: none;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      #balance {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+
+      #game-container {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      #wheel {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 6px solid #222;
+        box-shadow: 0 0 20px 6px #0f8;
+        background: conic-gradient(
+          #d30000 0deg 9.73deg,
+          #000 9.73deg 19.46deg,
+          #d30000 19.46deg 29.19deg,
+          #000 29.19deg 38.92deg,
+          #d30000 38.92deg 48.65deg,
+          #000 48.65deg 58.38deg,
+          #d30000 58.38deg 68.11deg,
+          #000 68.11deg 77.84deg,
+          #d30000 77.84deg 87.57deg,
+          #000 87.57deg 97.3deg,
+          #d30000 97.3deg 107.03deg,
+          #000 107.03deg 116.76deg,
+          #d30000 116.76deg 126.49deg,
+          #000 126.49deg 136.22deg,
+          #d30000 136.22deg 145.95deg,
+          #000 145.95deg 155.68deg,
+          #d30000 155.68deg 165.41deg,
+          #000 165.41deg 175.14deg,
+          #d30000 175.14deg 184.87deg,
+          #000 184.87deg 194.6deg,
+          #d30000 194.6deg 204.33deg,
+          #000 204.33deg 214.06deg,
+          #d30000 214.06deg 223.79deg,
+          #000 223.79deg 233.52deg,
+          #d30000 233.52deg 243.25deg,
+          #000 243.25deg 252.98deg,
+          #d30000 252.98deg 262.71deg,
+          #000 262.71deg 272.44deg,
+          #d30000 272.44deg 282.17deg,
+          #000 282.17deg 291.9deg,
+          #d30000 291.9deg 301.63deg,
+          #000 301.63deg 311.36deg,
+          #d30000 311.36deg 321.09deg,
+          #000 321.09deg 330.82deg,
+          #d30000 330.82deg 340.55deg,
+          #000 340.55deg 350.28deg,
+          #008000 350.28deg 360deg
+        );
+      }
+
+      #pointer {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid #ff4444;
+        filter: drop-shadow(0 0 3px #ff0000);
+        z-index: 10;
+      }
+
+      #wheel-numbers span {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #eee;
+        text-shadow: 1px 1px 2px #000;
+        pointer-events: none;
+        user-select: none;
+      }
+
+      #betting-area {
+        background: #111;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #0f8;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      #chips {
+        margin-bottom: 15px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .chip {
+        cursor: pointer;
+        padding: 10px 15px;
+        background: #333;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 16px;
+        color: #eee;
+        box-shadow: 0 0 5px #0f8;
+        user-select: none;
+        transition: all 0.2s ease;
+        min-width: 50px;
+        text-align: center;
+      }
+      .chip.selected {
+        background: #0f8;
+        color: #000;
+        box-shadow: 0 0 15px #0f8;
+        font-size: 18px;
+      }
+
+      #table {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 3px;
+        margin-bottom: 10px;
+        user-select: none;
+      }
+      .num-cell {
+        background: #222;
+        border-radius: 6px;
+        padding: 7px 0;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        color: #eee;
+        font-size: 14px;
+      }
+      .num-cell.red {
+        background: #a00;
+      }
+      .num-cell.black {
+        background: #111;
+      }
+      .num-cell.green {
+        background: #0a0;
+      }
+      .num-cell.bet-placed {
+        box-shadow: 0 0 10px #0f8;
+        background-color: #0f8240 !important;
+      }
+      #outside-bets {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 15px;
+      }
+      .outside-bet {
+        background: #222;
+        padding: 8px 14px;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        color: #eee;
+        transition: background 0.3s ease;
+      }
+      .outside-bet.bet-placed {
+        box-shadow: 0 0 15px #0f8;
+        background-color: #0f8240 !important;
+      }
+
+      #buttons {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 20px;
+      }
+      button {
+        background: #0f8;
+        border: none;
+        border-radius: 15px;
+        padding: 10px 25px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #000;
+        font-size: 18px;
+        transition: background 0.3s ease;
+        user-select: none;
+      }
+      button:disabled {
+        background: #555;
+        cursor: not-allowed;
+        color: #999;
+      }
+      button:hover:not(:disabled) {
+        background: #2aff99;
+      }
+
+      #win-lose-msg {
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 10px;
+        min-height: 50px;
+      }
+      #result {
+        white-space: pre-wrap;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 6px;
+        font-size: 1.1rem;
+        min-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎰 Casino Roulette Game 🎰</h1>
+    <div id="balance">Balance: $100</div>
+
+    <div id="game-container">
+      <div style="position: relative">
+        <div id="pointer"></div>
+        <div id="wheel">
+          <div id="wheel-numbers"></div>
+        </div>
+      </div>
+
+      <div id="betting-area">
+        <div id="chips">
+          <div class="chip selected" data-value="10">$10</div>
+          <div class="chip" data-value="25">$25</div>
+          <div class="chip" data-value="50">$50</div>
+        </div>
+
+        <div id="table">
+          <!-- Numbers 1-36 + 0 -->
+        </div>
+
+        <div id="outside-bets">
+          <div class="outside-bet" data-type="red">Red</div>
+          <div class="outside-bet" data-type="black">Black</div>
+          <div class="outside-bet" data-type="odd">Odd</div>
+          <div class="outside-bet" data-type="even">Even</div>
+          <div class="outside-bet" data-type="zero">Zero (0)</div>
+        </div>
+
+        <div id="buttons">
+          <button id="spin-btn">Spin</button>
+          <button id="clear-btn">Clear Bets</button>
+        </div>
+
+        <div id="win-lose-msg"></div>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script>
+      const balanceEl = document.getElementById("balance");
+      const wheel = document.getElementById("wheel");
+      const wheelNumbers = document.getElementById("wheel-numbers");
+      const table = document.getElementById("table");
+      const chips = document.querySelectorAll(".chip");
+      const numCells = [];
+      const outsideBets = document.querySelectorAll(".outside-bet");
+      const spinBtn = document.getElementById("spin-btn");
+      const clearBtn = document.getElementById("clear-btn");
+      const winLoseMsg = document.getElementById("win-lose-msg");
+      const resultEl = document.getElementById("result");
+
+      let balance = 100;
+      let selectedChipValue = 10;
+      let bets = {
+        numbers: {}, // key: number string, value: amount
+        outside: {}, // key: bet type string (red, black, odd, even, zero), value: amount
+      };
+
+      // Roulette color map by number
+      // Green for 0, reds and blacks are standard roulette layout
+      const reds = new Set([
+        1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36,
+      ]);
+      const blacks = new Set([
+        2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35,
+      ]);
+      const colorMap = {};
+      colorMap[0] = "green";
+      for (let i = 1; i <= 36; i++) {
+        if (reds.has(i)) colorMap[i] = "red";
+        else if (blacks.has(i)) colorMap[i] = "black";
+      }
+
+      // Create number cells (0-36)
+      function createTable() {
+        // 0 is special green cell on top left spanning 3 columns
+        const zeroCell = document.createElement("div");
+        zeroCell.classList.add("num-cell", "green");
+        zeroCell.textContent = "0";
+        zeroCell.dataset.num = "0";
+        zeroCell.style.gridColumn = "span 3";
+        zeroCell.style.fontSize = "16px";
+        zeroCell.style.fontWeight = "900";
+        zeroCell.style.cursor = "pointer";
+        table.appendChild(zeroCell);
+        numCells.push(zeroCell);
+
+        // Numbers 1-36 in 3 rows of 12 cols (like real roulette layout)
+        // Real roulette layout is from bottom-left going up column-wise
+        // We'll create rows top to bottom but colors and numbers match real positions
+
+        // Layout numbers by rows, 3 rows, 12 columns
+        // Row 1: 3,6,9,12,...36 (odd multiples of 3)
+        // Actually, easier to just create in numeric order left to right, top to bottom:
+        // But real roulette layout goes from 1 to 36 in 3 columns x 12 rows:
+
+        // Real roulette layout (rows from bottom to top):
+        // row1 (bottom): 1 4 7 10 13 16 19 22 25 28 31 34
+        // row2 (middle): 2 5 8 11 14 17 20 23 26 29 32 35
+        // row3 (top):    3 6 9 12 15 18 21 24 27 30 33 36
+
+        // We'll create in row-major order top to bottom to simplify:
+        // We'll create cells in numeric order but mark their colors correctly
+
+        // We'll just create in numeric order 1..36 left to right, top to bottom (rows of 12)
+        for (let i = 1; i <= 36; i++) {
+          const cell = document.createElement("div");
+          cell.classList.add("num-cell");
+          cell.textContent = i;
+          cell.dataset.num = i;
+          if (colorMap[i] === "red") cell.classList.add("red");
+          else if (colorMap[i] === "black") cell.classList.add("black");
+          numCells.push(cell);
+          table.appendChild(cell);
+        }
+      }
+
+      createTable();
+
+      // Wheel numbers for display on the wheel
+      // Roulette numbers arranged in this sequence (European Roulette):
+      const wheelSequence = [
+        0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8, 23, 10,
+        5, 24, 16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3, 26,
+      ];
+
+      // Place numbers around wheel
+      function placeWheelNumbers() {
+        const radius = 160;
+        const center = 175;
+        const count = wheelSequence.length;
+
+        wheelSequence.forEach((num, i) => {
+          const angle = (360 / count) * i - 90; // start from top ( -90 deg)
+          const rad = (angle * Math.PI) / 180;
+          const x = center + radius * Math.cos(rad) - 15; // 30px width / 2 = 15
+          const y = center + radius * Math.sin(rad) - 15; // 30px height / 2 = 15
+
+          const span = document.createElement("span");
+          span.textContent = num;
+          span.style.left = `${x}px`;
+          span.style.top = `${y}px`;
+          if (colorMap[num] === "red") span.style.color = "#f44336";
+          else if (colorMap[num] === "black") span.style.color = "#111";
+          else span.style.color = "#0f0";
+          wheelNumbers.appendChild(span);
+        });
+      }
+
+      placeWheelNumbers();
+
+      // Chip selection logic
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("selected"));
+          chip.classList.add("selected");
+          selectedChipValue = +chip.dataset.value;
+        });
+      });
+
+      // Bet placement logic on numbers
+      numCells.forEach((cell) => {
+        cell.addEventListener("click", () => {
+          const num = cell.dataset.num;
+          placeBet("numbers", num);
+          updateUI();
+        });
+      });
+
+      // Bet placement logic on outside bets
+      outsideBets.forEach((bet) => {
+        bet.addEventListener("click", () => {
+          const type = bet.dataset.type;
+          placeBet("outside", type);
+          updateUI();
+        });
+      });
+
+      // Place bet helper
+      function placeBet(category, key) {
+        if (balance < selectedChipValue) {
+          alert("Not enough balance for this bet");
+          return;
+        }
+        if (!bets[category][key]) bets[category][key] = 0;
+        bets[category][key] += selectedChipValue;
+        balance -= selectedChipValue;
+        updateBalance();
+      }
+
+      // Update balance display
+      function updateBalance() {
+        balanceEl.textContent = `Balance: $${balance}`;
+      }
+
+      // Update UI (highlight bets)
+      function updateUI() {
+        // Clear all highlights
+        numCells.forEach((cell) => cell.classList.remove("bet-placed"));
+        outsideBets.forEach((ob) => ob.classList.remove("bet-placed"));
+
+        // Highlight number bets
+        for (const num in bets.numbers) {
+          if (bets.numbers[num] > 0) {
+            const cell = numCells.find((c) => c.dataset.num === num);
+            if (cell) cell.classList.add("bet-placed");
+          }
+        }
+
+        // Highlight outside bets
+        for (const type in bets.outside) {
+          if (bets.outside[type] > 0) {
+            const ob = [...outsideBets].find((b) => b.dataset.type === type);
+            if (ob) ob.classList.add("bet-placed");
+          }
+        }
+      }
+
+      // Clear all bets
+      clearBtn.addEventListener("click", () => {
+        // Refund current bets to balance
+        let refund = 0;
+        for (const num in bets.numbers) refund += bets.numbers[num];
+        for (const type in bets.outside) refund += bets.outside[type];
+
+        balance += refund;
+
+        bets.numbers = {};
+        bets.outside = {};
+        updateBalance();
+        updateUI();
+        winLoseMsg.textContent = "";
+        resultEl.textContent = "";
+      });
+
+      // Spin logic
+      spinBtn.addEventListener("click", () => {
+        if (
+          Object.keys(bets.numbers).length === 0 &&
+          Object.keys(bets.outside).length === 0
+        ) {
+          alert("Place at least one bet before spinning!");
+          return;
+        }
+        spinBtn.disabled = true;
+        clearBtn.disabled = true;
+        winLoseMsg.textContent = "";
+        resultEl.textContent = "";
+
+        // Random winning number from 0 to 36
+        const winningIndex = Math.floor(Math.random() * wheelSequence.length);
+        const winningNumber = wheelSequence[winningIndex];
+
+        // Calculate rotation degrees to land on winning number at pointer (top)
+        // Each number covers 360/37 ≈ 9.73 degrees
+        // We want the winning number to be at -90deg (top)
+        // So rotation = 360 * spins + offset to winning number
+        const degreesPerNumber = 360 / wheelSequence.length;
+        const spins = 8; // full spins
+        const targetDegree =
+          spins * 360 + (360 - winningIndex * degreesPerNumber) - 90;
+
+        // Animate wheel spin
+        wheel.style.transition = "transform 6s cubic-bezier(0.33, 1, 0.68, 1)";
+        wheel.style.transform = `rotate(${targetDegree}deg)`;
+
+        setTimeout(() => {
+          wheel.style.transition = "none";
+          // Normalize rotation
+          const normalized = targetDegree % 360;
+          wheel.style.transform = `rotate(${normalized}deg)`;
+
+          // Calculate winnings
+          const winAmount = calculateWinnings(winningNumber);
+          if (winAmount > 0) {
+            winLoseMsg.style.color = "#0f8";
+            winLoseMsg.textContent = `You WON $${winAmount}! 🎉`;
+          } else {
+            winLoseMsg.style.color = "#f44";
+            winLoseMsg.textContent = "You LOST! 😞";
+          }
+          balance += winAmount;
+          updateBalance();
+
+          // Show detailed result
+          let details = `Winning number: ${winningNumber} (${colorMap[
+            winningNumber
+          ].toUpperCase()})\n\nYour bets:\n`;
+
+          for (const num in bets.numbers) {
+            details += `Number ${num}: $${bets.numbers[num]}\n`;
+          }
+          for (const type in bets.outside) {
+            details += `${capitalize(type)}: $${bets.outside[type]}\n`;
+          }
+          details += `\nBalance after spin: $${balance}`;
+          resultEl.textContent = details;
+
+          // Clear bets
+          bets.numbers = {};
+          bets.outside = {};
+          updateUI();
+
+          spinBtn.disabled = false;
+          clearBtn.disabled = false;
+        }, 6000);
+      });
+
+      // Capitalize first letter helper
+      function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+      // Calculate winnings based on bets and winning number
+      function calculateWinnings(winNum) {
+        let totalWin = 0;
+
+        // Straight number bets pay 35:1
+        if (bets.numbers[winNum]) {
+          totalWin += bets.numbers[winNum] * 36;
+        }
+
+        // Outside bets pay 1:1 except zero which pays 35:1 if betting on zero directly
+        for (const betType in bets.outside) {
+          const amount = bets.outside[betType];
+          switch (betType) {
+            case "red":
+              if (colorMap[winNum] === "red") totalWin += amount * 2;
+              break;
+            case "black":
+              if (colorMap[winNum] === "black") totalWin += amount * 2;
+              break;
+            case "odd":
+              if (winNum !== 0 && winNum % 2 === 1) totalWin += amount * 2;
+              break;
+            case "even":
+              if (winNum !== 0 && winNum % 2 === 0) totalWin += amount * 2;
+              break;
+            case "zero":
+              if (winNum === 0) totalWin += amount * 36;
+              break;
+          }
+        }
+        return totalWin;
+      }
+
+      updateBalance();
+      updateUI();
+    </script>
+    <a href="index.html" class="bttn">Go Back</a>
+  </body>
+</html>
