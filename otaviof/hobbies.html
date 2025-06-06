@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Hobbies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="filmes.html">Filmes Favoritos</a>
+            <a href="trabalhos.html">Trabalhos</a>
+        </nav> 
+    </header>
+
+    <h2>Meus Hobbies</h2>
+    <ul>
+        <li onclick="mostrarResumo('futebol')">Futebol</li>
+        <div id="futebol" class="resumo">Esporte coletivo jogado com os pés, muito popular no Brasil e no mundo.</div>
+
+        <li onclick="mostrarResumo('Automobilismo')">Automobilismo</li>
+        <div id="Automobilismo" class="resumo">Adrenalina em forma de curva e velocidade.</div>
+
+        <li onclick="mostrarResumo('ciclismo')">Ciclismo</li>
+        <div id="ciclismo" class="resumo">Atividade física praticada com bicicleta, ótima para resistência e paisagens.</div>
+
+        <li onclick="mostrarResumo('natacao')">Natação</li>
+        <div id="natacao" class="resumo">Esporte aquático completo que trabalha todos os músculos do corpo.</div>
+    </ul>
+
+    <script>
+        function mostrarResumo(id) {
+            const resumos = document.querySelectorAll('.resumo');
+            resumos.forEach(resumo => resumo.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
