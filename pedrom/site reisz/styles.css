@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ff0055;
+}
+
+header h1 {
+  font-size: 2.0rem;
+  letter-spacing: 2px;
+  color: #ff0055;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ff0055;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff66aa;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.course-info {
+  background: #222;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #ff0055aa;
+}
+
+.course-info h3 {
+  color: #ff0055;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.course-info ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.course-info ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.btn-enroll {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #ff0055;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-enroll:hover {
+  background: #ff66aa;
+}
+
+.email-link {
+  color: #ff0055;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  color: #ff66aa;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #777;
+}
