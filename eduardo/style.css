@@ -1,15 +1,43 @@
-.bacon p{
-    color: blue;
-}
-.pessoa p{
-    color: red;
-}
-.paragrafoTres p{
-    color: red;
-}
+
+
 body {
-    background-color: black;
+  font-family: 'arial black';
+  background-color: #121212;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-h1{
-    color:aqua;
+
+
+.coisas {
+  text-align: center;
+  padding: 2rem;
 }
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  background-color: #1f2e4a;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #2a3f66;
+  transform: scale(1.05);
+}
+
