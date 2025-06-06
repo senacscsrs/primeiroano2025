@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Portal da Turma - Prof. Gabriel</title>
+    <title>Portal da Turma</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #e6f2ff;
@@ -43,7 +45,27 @@
         }
 
         .aluno-btn:hover {
+            background-color: #ff0000;
+        }
+
+        .professor-btn {
             background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .professor-btn:hover {
+            background-color: #ff0000;
+        }
+
+        .centralizar {
+            display: flex;
+            justify-content: center;
         }
 
         footer {
@@ -55,16 +77,18 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Portal da Turma - Prof. Gabriel</h1>
-        <p>Escolha o nome de um aluno para acessar sua página</p>
+        <h1>Portal da Turma - Primeiro Ano 2025</h1>
+        <p>Escolha o nome de um aluno para acessar sua página!</p>
     </header>
+
 
     <div class="container">
         <div class="aluno-grid">
-            <!-- <button class="aluno-btn" onclick="location.href='Prof-Gabriel/'">Professor Gabriel</button> -->
+            
             <button class="aluno-btn" onclick="location.href='andriele/'">Andriele</button>
             <button class="aluno-btn" onclick="location.href='antonio/'">Antônio</button>
             <button class="aluno-btn" onclick="location.href='arthurl/'">Arthur L.</button>
@@ -100,15 +124,22 @@
             <button class="aluno-btn" onclick="location.href='valentina/'">Valentina</button>
             <button class="aluno-btn" onclick="location.href='vinicius/'">Vinicius</button>
             <button class="aluno-btn" onclick="location.href='vitoria/'">Vitória</button>
-            
+
+
+
 
             <!-- Adicione mais nomes conforme necessário -->
         </div>
     </div>
+
+    <div class="centralizar"> <button class="professor-btn" onclick="location.href='professor/'">Professor
+            Gabriel</button> </div>
+
 
     <footer>
         &copy; 2025 Prof. Gabriel | Técnico
     </footer>
 
 </body>
+
 </html>
