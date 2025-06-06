@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: rgb(161, 25, 189);
+    background-color: rgb(24, 199, 167);
     color: rgb(248, 248, 248);
     padding: 50px 20px;
 }
@@ -16,7 +16,7 @@ header {
 .botao {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 50px 20px;
     color: rgb(10, 162, 196);
     background-color: #005fa3;
     text-decoration: none;
@@ -29,10 +29,11 @@ header {
 
 section {
     padding: 50px 20px;
-    background-color: rgb(161, 25, 189);
+    background-color: rgb(24, 199, 167);
     margin: 20px;
     border-radius: 8px;
 }
+
 
 /* styles.css */
 .botao-container {
@@ -55,3 +56,4 @@ section {
     background-color: #004080;
     transform: scale(1.05);
 }
+ 
