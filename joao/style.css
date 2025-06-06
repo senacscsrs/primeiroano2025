@@ -1,0 +1,12 @@
+.troca-imagem {
+  width: 300px;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.troca-imagem:hover {
+  content: url('img/imagem2.jpg');
+}
+.troca-imagem:active {
+  content: url('img/imagem3.jpg');
+}
