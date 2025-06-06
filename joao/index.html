@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site do João</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+      transition: background-color 0.5s;
+      background: #fafafa;
+      color: #222;
+    }
+    h1 {
+      color: #de0000;
+    }
+    img {
+      max-width: 300px;
+      width: 100%;
+      cursor: pointer;
+      margin: 1rem 0;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+    }
+    button {
+      background: #001157;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 1rem 0;
+    }
+    .imgleft{
+        float: left;
+        margin-right: 20px;
+        width: 200px;
+        border-radius: 10px;
+    }
+    .imgright{
+        float: right;
+        margin-right: 20px;
+        width: 200px;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao site do João</h1>
+  <h2>Você conseguiu encontrar o meu site.</h2>
+  <h3>agora use e se lambuse com as diversidades que tem ou no caso o rawizinho</h3>
+  <p>Clique na imagem para trocar fotos.</p>
+ <div class="imgleft">
+  <img id="img" src="https://www.riovalejornal.com.br/userfiles/image/xDSC_8243.jpg.pagespeed.ic.vCPhomS7-l.webp" alt="Imagem do João" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/SC_Internacional_Brazil_Logo.svg/250px-SC_Internacional_Brazil_Logo.svg.png" alt="o maior do sul">
+    </div>
+    <div class="imgright">
+  <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/497855965_3925526880993094_8152902464550733886_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Paed-Pl-CXAQ7kNvwE1qgR7&_nc_oc=AdkIj9SbUTE_HyHmviPRKZbYyJndnA4VmlQOCg3yGiQUeeUgBGC3w_dCzgv2R2Y2hGU&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=P40z3l-g4XK4Gwp346G6gw&oh=00_AfPMe66xEvXGpsa1BxFZXpazEUPzI88ayHOIHDenTQxCBQ&oe=68474FB1" alt="Imagem do João" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/SC_Internacional_Brazil_Logo.svg/250px-SC_Internacional_Brazil_Logo.svg.png" alt="o maior do sul">
+    </div>
+  <p>aqui é um botao onde troca a cor do fundo:</p>
+  <button id="btnCor">Trocar cor de fundo</button>
+
+  <script>
+    const imagens = [
+      "img1.jpg",
+      "img2.jpg",
+      "img3.jpg",
+    ];
+    let i = 0;
+    const img = document.getElementById('img');
+
+    img.onclick = () => {
+      i = (i + 1) % imagens.length;
+      img.style.opacity = 0;
+      setTimeout(() => {
+        img.src = imagens[i];
+        img.style.opacity = 1;
+      }, 300);
+    };
+
+    const btnCor = document.getElementById('btnCor');
+
+    btnCor.onclick = () => {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      const bg = `rgb(${r},${g},${b})`;
+      const yiq = (r * 299 + g * 587 + b * 114) / 1000;
+      const corTexto = yiq >= 128 ? 'black' : 'white';
+
+      document.body.style.backgroundColor = bg;
+      btnCor.style.backgroundColor = corTexto;
+      btnCor.style.color = bg;
+    };
+  </script>
+</body>
+</html>
