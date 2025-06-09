@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atividades - Site do João</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #001157, #0033a0);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem 2rem;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      flex-grow: 1;
+      text-align: center;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    nav a {
+      background: linear-gradient(135deg, #000000, #0d00ff);
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+
+    nav a:hover {
+      background: linear-gradient(135deg, #000000, #0d0073);
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .botoes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      nav {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" title="Voltar para Início">Início</a>
+      <a href="galeria.html" title="Ir para Galeria">Galeria</a>
+    </nav>
+    <h1>Atividades</h1>
+    <div style="flex-grow:1;"></div> <!-- Para manter espaçamento simétrico -->
+  </header>
+
+  <main>
+    <h2>Escolha uma das atividades abaixo:</h2>
+    <div class="botoes">
+      <a class="btn" href="atividade1.html">Atividade 1</a>
+      <a class="btn" href="atividade2.html">Atividade 2</a>
+      <a class="btn" href="atividade3.html">Atividade 3</a>
+      <a class="btn" href="atividade4.html">Atividade 4</a>
+      <a class="btn" href="atividade5.html">Atividade 5</a>
+      <a class="btn" href="atividade6.html">Atividade 6</a>
+    </div>
+  </main>
+
+  <footer>
+    Voltar para <a href="index.html">Página Inicial</a> | Feito com 💙 por João
+  </footer>
+
+</body>
+</html>
