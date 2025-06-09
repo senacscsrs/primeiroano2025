@@ -200,4 +200,22 @@ body {
     margin-top: -20px;
 }
 
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: rgb(160, 146, 250);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: 2px solid black;
+}
+
+.project-link:hover {
+    background-color: rgb(101, 88, 189);
+    border: 2px solid black;
+}
+
 
