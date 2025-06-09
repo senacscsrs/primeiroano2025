@@ -1,87 +1,13 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.paragraph {
-  color: black;
-  text-align: center;
-  font-size: xx-large;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-h1 {
-  color: #1f1f1f;
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
-  margin-top: -30px;
-  h1 a:hover {
-    text-decoration: underline;
-  }
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: #000;
-  display: flex;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.menu > li {
-  position: relative;
-}
-
-.menu a {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  background: #555;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #000;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-  width: max-content;
-}
-
-.dropdown:hover .submenu {
-  display: flex;
-}
-
-.submenu li a {
-  padding: 10px 20px;
-  color: white;
-}
-
-.submenu li a:hover {
-  background: #666;
-}
-
-body.index,
-body.about,
-body.contact,
-body.projects {
   background-color: rgb(137, 119, 255);
-  padding-top: 60px;
+  padding-top: 60px; /* espaço para o header fixo */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,14 +15,112 @@ body.projects {
   min-height: 100vh;
 }
 
+/* Cabeçalho fixo com menu e instagram */
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 1000;
+}
+
+/* Menu principal */
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 60px;
+}
+
+.menu > li {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* Submenu dropdown */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1001;
+}
+
+.dropdown:hover .submenu {
+  display: flex;
+}
+
+.submenu li a {
+  padding: 12px 24px;
+  color: white;
+  display: block;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.submenu li a:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+/* Ícone Instagram no cabeçalho */
+.instagram-link img {
+  height: 36px;
+  width: auto;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+.instagram-link:hover img {
+  filter: brightness(1.5) drop-shadow(0 0 6px #e1306c);
+  cursor: pointer;
+}
+
+/* Parágrafos e textos das páginas */
+.paragraph,
 .descri,
 .contactinfo,
 .projectshelf {
   max-width: 600px;
   margin: 20px;
   font-size: x-large;
+  color: black;
 }
 
+/* Spotify player */
 .spotify-player {
   display: flex;
   gap: 10px;
@@ -111,6 +135,7 @@ body.projects {
   margin-top: 50px;
 }
 
+/* Hamburger (mobile) */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -121,26 +146,58 @@ body.projects {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  /* Esconde menu e mostra hamburger */
   .menu {
     display: none;
     flex-direction: column;
     width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
 
+  /* Quando menu ativo (ex: via JS), mostrar */
   .menu.show {
     display: flex;
   }
 
+  /* Submenu no mobile fica dentro do fluxo */
   .submenu {
-    position: static; /* Deixa o submenu dentro do fluxo normal */
-    width: 100%;
+    position: static;
+    box-shadow: none;
+    min-width: auto;
+    display: none;
+    flex-direction: column;
   }
 
+  /* Exibir submenu quando ativo */
+  .submenu.show {
+    display: flex;
+  }
+
+  /* Links submenu com padding maior */
   .submenu li a {
     padding-left: 40px;
   }
 
+  /* Hamburger visível no mobile */
   .hamburger {
     display: block;
   }
+
+  /* Ajusta nav-header para altura maior no mobile quando menu aberto */
+  .nav-header {
+    padding: 0 16px;
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
+
+.h111 {
+    color: #2e2e2e;
+    font-size: x-small;
+    margin-top: -20px;
+}
+
+
