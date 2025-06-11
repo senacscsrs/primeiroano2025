@@ -1,0 +1,18 @@
+img{
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: #b724d7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+div{
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 400px;
+}

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Futebol Mundial</title>
+  <title>Davi Gabriel Rodrigues</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
   <!-- Ícone de favicon -->
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/685/685736.png" type="image/png">
+  <link rel="icon" href="" type="image/png">
   <style>
     :root {
-      --primary-color: #1c1c1c;
+      --primary-color: #730202;
       --secondary-color: #e50914;
       --text-light: #ffffff;
       --text-dark: #333333;
@@ -25,7 +25,7 @@
 
     body {
       font-family: var(--font-main);
-      background-color: #f4f4f4;
+      background-color: #f0f0f0;
       color: var(--text-dark);
       line-height: 1.6;
     }
@@ -69,14 +69,14 @@
 
     /* Hero Section */
     .hero {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_FIFA.svg/330px-Flag_of_FIFA.svg.png') no-repeat center center/cover;
+      background: url('') no-repeat center center/cover;
       height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       color: var(--text-light);
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-shadow: 2px 2px 8px rgba(98, 97, 97, 0.7);
     }
 
     .hero::after {
@@ -86,7 +86,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(8, 8, 8, 0.4);
     }
 
     .hero-content {
@@ -121,26 +121,26 @@
 
     .cards-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1.4rem;
     }
 
     .card {
       background-color: #fff;
-      border-radius: 8px;
+      border-radius: 6px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     .card img {
       width: 100%;
-      height: 150px;
+      height: 120px;
       object-fit: cover;
     }
 
@@ -206,15 +206,13 @@
 <body>
   <!-- Cabeçalho e Navegação -->
   <header>
-    <div class="logo">Futebol Mundial</div>
+    <div>Ensino Medio <strong>senac</strong></div>
     <nav>
       <ul>
         <li><a href="#">Início</a></li>
-        <li><a href="#europa">Europa</a></li>
-        <li><a href="#america">América</a></li>
-        <li><a href="#asia">Ásia</a></li>
-        <li><a href="#africa">África</a></li>
-        <li><a href="#oceania">Oceania</a></li>
+        <li><a href="sobremim.html">Sobre Mim</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -222,158 +220,45 @@
   <!-- Hero Banner -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Bem-vindo ao Futebol Mundial</h1>
-      <p>Explore os campeonatos e as principais equipes de todas as partes do mundo.</p>
+      <h1>Bem-vindo(a) a minha pagina</h1>
+      <p>Explore meus projetos, essa pagina tem o foco de mostrar e vender meus projetos.</p>
     </div>
   </section>
 
   <!-- Seção Europa -->
-  <section id="europa">
-    <h2>Europa</h2>
+  <section>
+    <h2>Projetos</h2>
     <div class="cards-container">
       <!-- Card: Premier League -->
       <div class="card">
-        <img src="https://a1.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F23.png" alt="Premier League">
         <div class="card-body">
-          <h3>Premier League</h3>
-          <p>Liga inglesa, uma das mais competitivas do mundo, com clubes como Manchester United, Liverpool e Chelsea.</p>
-          <a href="#">Ver mais</a>
+          <h3>Projeto 1</h3>
+          <p>Aqui temos o primeirto projeto</p>
+          <a href="projetos.html">Ver mais</a>
         </div>
       </div>
       <!-- Card: La Liga -->
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg/1200px-LaLiga_EA_Sports_2023_Vertical_Logo.svg.png" alt="La Liga">
         <div class="card-body">
-          <h3>La Liga</h3>
-          <p>Campeonato espanhol, lar de gigantes como Real Madrid e Barcelona, famoso por seu futebol técnico.</p>
-          <a href="#">Ver mais</a>
+          <h3>Projeto 2</h3>
+          <p>Aqui temos o segundo projeto.</p>
+          <a href="projetos.html">Ver mais</a>
         </div>
       </div>
       <!-- Card: Serie A -->
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Serie_A.svg/1200px-Serie_A.svg.png" alt="Serie A">
         <div class="card-body">
-          <h3>Serie A</h3>
-          <p>Principal liga italiana, destacando-se por clubes como Juventus, Milan e Inter.</p>
-          <a href="#">Ver mais</a>
+          <h3>Projeto 3</h3>
+          <p>Aqui temos o terceiro projeto.</p>
+          <a href="projetos.html">Ver mais</a>
         </div>
       </div>
       <!-- Card: Bundesliga -->
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Bundesliga_logo_%282017%29.png" alt="Bundesliga">
         <div class="card-body">
-          <h3>Bundesliga</h3>
-          <p>Campeonato alemão, conhecido pela torcida vibrante e equipes como Bayern de Munique e Borussia Dortmund.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção América -->
-  <section id="america">
-    <h2>América</h2>
-    <div class="cards-container">
-      <!-- Card: Brasileirão -->
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/pt/7/75/Campeonato_Brasileiro_de_Futebol_de_2024_-_S%C3%A9rie_A.png" alt="Brasileirão">
-        <div class="card-body">
-          <h3>Brasileirão Série A</h3>
-          <p>Principal campeonato do Brasil, repleto de talento e rivalidades históricas.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-      <!-- Card: MLS -->
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MLS_crest_logo_RGB_gradient.svg/1200px-MLS_crest_logo_RGB_gradient.svg.png" alt="MLS">
-        <div class="card-body">
-          <h3>MLS</h3>
-          <p>Major League Soccer, campeonato dos Estados Unidos, em rápido crescimento e atração de grandes nomes.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-      <!-- Card: Liga MX -->
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/MX_logo.png" alt="Liga MX">
-        <div class="card-body">
-          <h3>Liga MX</h3>
-          <p>Liga mexicana, conhecida por sua competitividade e atmosfera vibrante nos estádios.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-      <!-- Card: Superliga Argentina -->
-      <div class="card">
-        <img src="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F1.png" alt="Superliga Argentina">
-        <div class="card-body">
-          <h3>Superliga Argentina</h3>
-          <p>Campeonato argentino, berço de craques e rivalidades intensas como Boca Juniors x River Plate.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Ásia -->
-  <section id="asia">
-    <h2>Ásia</h2>
-    <div class="cards-container">
-      <!-- Card: J-League -->
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/J.League.svg" alt="J-League">
-        <div class="card-body">
-          <h3>J-League</h3>
-          <p>Campeonato japonês, referência na Ásia e conhecido por sua organização e estádios modernos.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-      <!-- Card: K-League -->
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/K_League_1.svg/1200px-K_League_1.svg.png" alt="K-League">
-        <div class="card-body">
-          <h3>K-League</h3>
-          <p>Campeonato sul-coreano, em crescimento e revelando talentos para o futebol mundial.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção África -->
-  <section id="africa">
-    <h2>África</h2>
-    <div class="cards-container">
-      <!-- Card: Liga dos Campeões da CAF -->
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d5/CAF_Champions_League.png" alt="Liga dos Campeões da CAF">
-        <div class="card-body">
-          <h3>CAF Champions League</h3>
-          <p>Principal competição continental africana, colocando frente a frente os melhores clubes do continente.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-      <!-- Card: Premier League Egípcia -->
-      <div class="card">
-        <img src="https://pbs.twimg.com/media/Fy8xE55X0AE8ux5.jpg" alt="Premier League Egípcia">
-        <div class="card-body">
-          <h3>Premier League Egípcia</h3>
-          <p>Liga do Egito, famosa por clubes tradicionais como Al Ahly e Zamalek.</p>
-          <a href="#">Ver mais</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Oceania -->
-  <section id="oceania">
-    <h2>Oceania</h2>
-    <div class="cards-container">
-      <!-- Card: A-League -->
-      <div class="card">
-        <img src="https://1000logos.net/wp-content/uploads/2019/01/A-League-Logo-2017-2021.png" alt="A-League">
-        <div class="card-body">
-          <h3>A-League</h3>
-          <p>Principal liga da Austrália, reunindo clubes como Sydney FC e Melbourne Victory.</p>
-          <a href="#">Ver mais</a>
+          <h3>Projeto 4</h3>
+          <p>Aqui temos o quarto projeto.</p>
+          <a href="projetos.html">Ver mais</a>
         </div>
       </div>
     </div>
@@ -381,7 +266,7 @@
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Futebol Mundial. Todos os direitos reservados.</p>
+    <p>&copy; 2025 davi Gabriel Rodrigues.</p>
   </footer>
 </body>
 </html>
