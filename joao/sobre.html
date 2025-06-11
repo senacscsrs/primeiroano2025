@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre João Carlos Henn</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f2f2;
+      color: #222;
+      transition: background 0.4s ease;
+    }
+
+    header {
+      background: linear-gradient(90deg, #000000, #000000);
+      padding: 1rem 2rem;
+      color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 6rem auto 2rem;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #000000;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      margin: 0.5rem 0 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    .perfil {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .foto {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: url('https://via.placeholder.com/180') center/cover no-repeat;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .descricao {
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.95rem;
+      color: #555;
+      background: #eee;
+      border-top: 1px solid #ccc;
+    }
+    button {
+  background: #001157;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sobre mim</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="aba.html">Atividades</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre mim</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="perfil">
+        <div class="foto"></div>
+        <div class="descricao">
+          <h2>João Carlos Henn</h2>
+          <p>Olá! Meu nome é João Carlos Henn, tenho 17 anos e sou estudante do ensino médio no SENAC de Santa Cruz do Sul. Sou apaixonado por tecnologia, programação e tudo o que envolve o mundo digital.</p>
+          <p>Estou constantemente buscando aprender mais e desenvolver minhas habilidades em desenvolvimento web, design e inovação. Este site é uma forma de mostrar um pouco do meu trabalho e progresso nessa jornada.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Entre em contato</h2>
+      <p>Fique à vontade para me chamar nas redes sociais ou pelos contatos abaixo.</p>
+
+      <ul style="list-style: none; padding-left: 0; margin-top: 1.5rem;">
+        <li><strong>Email:</strong> joaohnn7007@gmail.com</li>
+        <li><strong>Telefone:</strong> (51) 980182813</li>
+      </ul>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://www.instagram.com/lord7kk/" target="_blank" style="text-decoration: none;">
+          <button style="background: #000000;">Instagram</button>
+        </a>
+        <a href="https://github.com/TaldoJoao01" target="_blank" style="text-decoration: none;">
+          <button style="background: #000000;">GitHub</button>
+        </a>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
