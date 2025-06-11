@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <title>☆Davi G☆</title>
-  <link real="stylesheet" href="estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Meus Projetos - Davi</title>
   <style>
-    img{
-      max-width: 100%;
-      height: auto;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a8d8ea;
+      padding: 30px;
     }
-    body{
-      background-color: aliceblue;
-    }
-    body{
-      margin: 0;
-      padding: 0;
-    }
-    h1{
-      color: rgb(244, 141, 204);
+
+    h1 {
+      color: #ff5ba0;
       text-align: center;
+      margin-bottom: 30px;
     }
-    .imagem-solta{
-      position: absolute;
-      top:100px;
-      left:90px;
-      width:200px;
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    .imagem-solta1 {
-       position: absolute;
-      top:100px;
-      left:90px;
-      width:200px;
+
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #ff5ba0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .botao {
+      background-color: #ff5ba0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .botao:hover {
+      background-color: white;
+      color: #ff5ba0;
+      border: 2px solid #ff5ba0;
     }
   </style>
 </head>
 <body>
-  <h1 style="font-size: 32px;">☆Projetos de Davi☆</h1>
-  <a href="https://www.youtube.com/watch?v=5Q_q9cq3B5A&pp=0gcJCdgAo7VqN5tD" target="_blank">
-    <img src="growth (12).png" alt="k-12bus" class="imagem-solta">
-    </a>
-  <a href="https://www.youtube.com/watch?v=2HtaIvb61Uk" target="_blank">
-  <img src="growth (13).png" alt="k-12" class="imagem-solta1"
-  </a>
-  <a href="C:\Users\DAVIGOMESDEMORAES\Desktop\primeiroano2025\davim\projeto 2">
-  <button>Ir para o Projeto 2</button>
-</a>
-</body>
-</html>
+
+  <h1>💻 Meus Projetos</h1>
+
+  <section class="projetos">
+    <div class="card">
+      <h3>🌟 Calculadora Simples</h3>
+      <p>Uma calculadora que faz contas básicas com HTML, CSS e JavaScript.</p>
+      <a href="https://github.com/seuusuario/calculadora" class="botao" target="_blank">Ver Projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>🎮 Jogo da Velha</h3>
+      <p>Um jogo da velha interativo para dois jogadores, feito no VS Code.</p>
+      <a href="https://github.com/seu
