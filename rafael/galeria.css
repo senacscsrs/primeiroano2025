@@ -19,7 +19,13 @@
         }
         .content {
             padding: 10px;
+         flex: 1;
         }
+        .wrapper{
+        min-height: 30vh; 
+        display: flex;
+        flex-direction: column;
+    }
         #senac{
         position:absolute;
         top: 2px;
@@ -39,3 +45,48 @@
             display: flex;
             gap: 10px;
         }
+           footer {
+   background-color: #222;
+  color: #eee;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 100px;
+  padding: 10px;
+    margin-top: 23px;
+}
+
+
+footer div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #eee;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.instagram-link {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #222; 
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.instagram-link:hover {
+  background-color: #222;
+}
+
+.instagram-link i {
+  font-size: 20px;
+}
