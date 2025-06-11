@@ -1,4 +1,4 @@
-/* Reset básico e estilos globais */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-  /* Tema claro */
+
   --bg: #ffffff;
   --text: #222222;
   --primary: #005f73;
@@ -30,7 +30,7 @@ html {
 }
 
 [data-theme='dark'] {
-  /* Tema escuro */
+ 
   --bg: #121212;
   --text: #e0e0e0;
   --primary: #bb86fc;
@@ -51,7 +51,7 @@ body {
   padding-top: 60px;
 }
 
-/* Container centralizado e responsivo */
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -59,7 +59,7 @@ body {
   
 }
 
-/* Header e navegação */
+
 .header {
   position: fixed;
   top: 0;
@@ -86,7 +86,7 @@ body {
   user-select: none;
 }
 
-/* Navegação desktop */
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -117,7 +117,7 @@ body {
   border-radius: 2px;
 }
 
-/* Botão tema */
+
 #theme-toggle {
   background: none;
   border: none;
@@ -128,7 +128,7 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Botão menu hambúrguer */
+
 .menu-toggle {
   display: none;
   background: none;
@@ -166,14 +166,15 @@ body {
   bottom: 0;
 }
 
-/* Main */
+
 .main {
-  padding-top: 200px; /* Para compensar header fixo */
+  padding-top: 200px;
   flex-grow: 1;
   animation: fadeIn 0.8s ease forwards;
+  
 }
 
-/* Introdução página inicial */
+
 .intro {
   text-align: center;
   padding: 3rem 1rem;
@@ -184,7 +185,7 @@ body {
   color: var(--primary);
 }
 
-/* Biografia */
+
 .bio-main {
   padding: 2rem 1rem;
 }
@@ -215,7 +216,7 @@ body {
   line-height: 1.6;
 }
 
-/* Trabalhos */
+
 .projects-main {
   padding: 2rem 1rem;
 }
@@ -231,7 +232,7 @@ body {
   background-color: var(--header-bg);
   border-radius: 8px;
   box-shadow: 0 4px 8px var(--shadow);
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -278,7 +279,6 @@ body {
   color: #fff;
 }
 
-/* Página de detalhes do projeto */
 .project-detail {
   padding: 2rem 1rem;
   animation: slideUp 1s ease forwards;
@@ -292,7 +292,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Footer */
+
 .footer {
   background-color: var(--footer-bg);
   padding: 1rem 0;
@@ -321,7 +321,7 @@ body {
   color: var(--secondary);
 }
 
-/* Animações */
+
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -338,9 +338,7 @@ body {
   }
 }
 
-/* Responsividade */
 
-/* Menu hambúrguer para telas pequenas */
 @media (max-width: 768px) {
   .nav {
     position: fixed;
@@ -368,4 +366,12 @@ body {
   .menu-toggle {
     display: block;
   }
+
 }
+  .foto1, .foto2, .foto3 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
