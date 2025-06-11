@@ -1,13 +1,14 @@
-body {
+ body {
             font-family: Arial, sans-serif;
             background-color: #af92cd;
             color: #333;
             margin: 0;
             padding: 20px;
+            background-image: url('https://i.pinimg.com/736x/3b/f5/ce/3bf5cef8a5505f2c848a45443e0208aa.jpg');
         }
 
         h1 {
-            color: #1d1a1f;
+            color: #3e0f5e;
         }
 
         h2 {
@@ -59,4 +60,10 @@ h1{
     border: 2px solid #361b1b;
     border-radius: 10px;
     width: 400px;
+}
+h1{
+    background-color: #c89adc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
