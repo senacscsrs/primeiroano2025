@@ -4,7 +4,7 @@
             color: #333;
             margin: 0;
             padding: 20px;
-            background-image: url('https://i.pinimg.com/736x/3b/f5/ce/3bf5cef8a5505f2c848a45443e0208aa.jpg');
+    
         }
 
         h1 {
@@ -66,4 +66,31 @@ h1{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    display: flex;
+}
+.informações{
+    text-align: center;
+    width: 400px;
+    display: flex;
+    position: sticky;
+    color: #d8beea;
+}
+.senac{
+    text-align: center;
+    width: 300px;
+    font-size: 30px;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #4a2860;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
 }

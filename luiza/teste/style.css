@@ -5,7 +5,7 @@ h1{
     text-align: center;
 }
 body{
-    background-color: #a14b7a;
+    background-color: #a474c5;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -32,7 +32,13 @@ div{
             border-radius: 5px;
         }
         h2 {
-            color: #3f1d28;
-            background-color: #db6b90;
+            color: #a460a9;
+            background-color: #542c58;
+        }
+
+        .gatos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
 
