@@ -5,14 +5,34 @@ h1{
     text-align: center;
 }
 body{
-    background-color: #b724d7;
+    background-color: #a14b7a;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+
 }
 div{
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid #771a5b;
     border-radius: 10px;
     width: 400px;
 }
+.introdução{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spotify {
+            background-color: #203f28;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #3f1d28;
+            background-color: #db6b90;
+        }
+
