@@ -1,102 +1,91 @@
-/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f6f9;
+  color: #1e1e1e;
+  line-height: 1.6;
 }
 
-/* Cabeçalho e navegação */
 header {
-    background: linear-gradient(to right, #0077b6, #00b4d8);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #2563eb;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  background-color: #1d4ed8;
+  padding: 10px;
+  text-align: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
+  background-color: #3b82f6;
 }
 
-/* Títulos */
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
 }
 
-/* Lista de hobbies */
-ul {
-    list-style: none;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0;
+h1, h2 {
+  color: #1e40af;
+  margin-bottom: 10px;
 }
 
-li {
-    background: #ffffff;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, background 0.3s ease;
-    cursor: pointer;
+p {
+  margin-bottom: 20px;
 }
 
-li:hover {
-    background: #e0f7fa;
-    transform: scale(1.02);
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-/* Resumos */
-.resumo {
-    background: #f1f1f1;
-    padding: 10px 15px;
-    margin: 10px auto 20px;
-    border-left: 4px solid #00b4d8;
-    border-radius: 5px;
-    max-width: 600px;
-    display: none;
-    font-style: italic;
-    animation: fadeIn 0.3s ease-in-out;
+form button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Animação */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
+form button:hover {
+  background-color: #1e40af;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    li {
-        font-size: 16px;
-    }
+footer {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: bold;
 }
