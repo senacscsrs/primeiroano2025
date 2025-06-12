@@ -4,8 +4,14 @@
             color: #333;
             margin: 0;
             padding: 20px;
-            background-image: url('https://i.pinimg.com/736x/3b/f5/ce/3bf5cef8a5505f2c848a45443e0208aa.jpg');
+ }
+ header {
+            background-color: #5e3443;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
+        
 
         h1 {
             color: #3e0f5e;
@@ -66,4 +72,14 @@ h1{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+}
+nav
+{
+    background-color: #80173c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.link{
+    color:white;
 }
