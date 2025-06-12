@@ -1,47 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <title>☆Davi G☆</title>
-  <link real="stylesheet" href="estilos.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-        .aluno-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-    body {
-      background-color: aliceblue;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      color: rgb(244, 141, 204);
-      text-align: center;
-      flex-wrap: wrap;
-    }
-  .aluno-btn {
-            background-color: #f48dcc;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☆Inicial☆</title>
+    <style>
+        .aluno-btn18 {
+            background-color: #f081c5;
             color: white;
             border: none;
-            padding: 15px;
-            font-size: 10px;
-            border-radius: 30px;
+            padding: 19px;
+            font-size: 23px;
+            border-radius: 0px;
             cursor: pointer;
             transition: 0.3s;
             position: absolute;
-            top: 100px;
-            left: 50px;
+            top: 1px;
+            left: 0px;
+            z-index: 10;
         }
-  </style>
+        .aluno-btn19 {
+            background-color: #f081c5;
+            color: white;
+            border: none;
+            padding: 09px;
+            font-size: 22px;
+            border-radius: 0px;
+            cursor: pointer;
+            transition: 0.3s;
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            z-index: 10;
+        }
+        .aluno-btn20 {
+            background-color: #f081c5;
+            color: white;
+            border: none;
+            padding: 22px;
+            font-size: 9px;
+            border-radius: 0px;
+            cursor: pointer;
+            transition: 0.3s;
+            position: absolute;
+            top: 104px;
+            left: 0px;
+            z-index: 10;
+        }
+        .barra-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px; /* largura da barra */
+    height: 100vh; /* altura total da tela */
+    background-color: #F48DCC; /* cor da barra lateral */
+    }
+    .aluno-btn18:hover {
+    background-color: #d873b3; /* versão mais escura do rosa */
+    }
+    .aluno-btn19:hover {
+    background-color: #d873b3; /* versão mais escura do rosa */
+    }
+    .aluno-btn20:hover {
+    background-color: #d873b3; /* versão mais escura do rosa */
+    }
+    </style>
 </head>
 <body>
-  <h1 style="font-size: 32px;">☆Projetos de Davi☆</h1>
-  <button class="aluno-btn" onclick="location.href='projeto2'">Projeto</button>
+    <p>página inicial</p>
+  <button class="aluno-btn18" onclick="location.href='sobre.html'">Sobre</button>
+  <button class="aluno-btn19" onclick="location.href='projetos.html'">Projetos</button>
+  <button class="aluno-btn20" onclick="location.href='comunicação.html'">Comunicação</button>
+    <div class="barra-lateral"></div>
 </body>
 </html>
->>>>>>> 8a5e4b853f6ede3235e7aaf327e6d438b98a366d
