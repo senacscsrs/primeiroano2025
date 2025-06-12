@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Contato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -39,7 +40,8 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
       padding: 0;
       margin-top: 0.5rem;
     }
@@ -77,6 +79,7 @@
       font-size: 2.5rem;
       z-index: 1;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      text-align: center;
     }
 
     section {
@@ -91,6 +94,7 @@
     section h2 {
       color: var(--primary);
       margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
 
     section p, a {
@@ -112,6 +116,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       font-family: var(--font);
+      font-size: 1rem;
     }
 
     button {
@@ -138,9 +143,34 @@
       margin-top: 3rem;
     }
 
-    @media (max-width: 600px) {
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+      header, nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
       .banner h1 {
         font-size: 2rem;
+        padding: 0 1rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      input, textarea {
+        font-size: 0.95rem;
+      }
+
+      button {
+        width: 100%;
       }
     }
   </style>
@@ -152,7 +182,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="sobremim.html">Sobre Mim</a></li>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
@@ -165,8 +195,7 @@
 
   <section>
     <h2>Informações de Contato</h2>
-    <p><strong>Celular:</strong> +55 (51) 99295-9534</p>
-    <p><strong>E-mail:</strong> <a href="davi.gabrielrodrigues23@gmail.com">davi.gabrielrodrigues23@gmail.com</a></p>
+    <p><strong>E-mail:</strong> <a href="mailto:davi.gabrielrodrigues23@gmail.com">davi.gabrielrodrigues23@gmail.com</a></p>
   </section>
 
   <section>
