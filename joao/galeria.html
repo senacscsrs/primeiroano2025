@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atividades - Site do João</title>
+  <link rel="stylesheet" href="aba.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    
+    header {
+      background-color: #d10000;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+      padding: 0.5rem;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      margin: 0 0.5rem;
+    }
+    
+    nav a:hover {
+      background-color: #000000;
+      border-radius: 5px;
+    }
+    
+    #atividades {
+       max-width: 1100px;
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0 10px;
+    }
+
+    .photo-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .photo-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 2px solid #eee;
+      user-select: none;
+    }
+
+    .name {
+      padding: 15px 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #222;
+      background-color: #f8f8f8;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-content {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 5px;
+      text-align: center;
+      max-width: 90%;
+      max-height: 90%;
+    }
+    
+    .modal-content img {
+      max-width: 100%;
+      max-height: 70vh;
+      margin-bottom: 1rem;
+    }
+    
+    .close-btn {
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .close-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galeria das crianças</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="aba.html">Atividades</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre mim </a>
+    </nav>
+  </header>
+
+  <section id="atividades">
+ 
+  </section>
+  
+
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="Imagem ampliada">
+      <p id="modalCaption"></p>
+      <button class="close-btn" onclick="closeModal()">Fechar</button>
+    </div>
+  </div>
+
+  <script>
+    const colegas = [
+      {
+        name: "Eduardo",
+        photos: [
+        href="dudubarro.jpg",
+          href="imagemdudu.jpeg"
+        ]
+      },
+      {
+        name: "Vinicius",
+        photos: [
+          "https://scontent-gru2-1.xx.fbcdn.net/v/t1.6435-9/80833614_2602399506503753_8960812194899951616_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=h_CbqnOoSmEQ7kNvwH8GC53&_nc_oc=AdmZdreHyIrB9c22ktayMpGLbBNcdUdlRe1Q4YW3BoQ7gdPO2shSdiTXvfaWRS-ekn8&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=ku3GCczDBkjw0g84QLn_LQ&oh=00_AfNi-CsEDIRNzh5R3jVmPf2EBoCQppfaUwmH2en5gybzZg&oe=686FBDD1",
+          "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/463359603_8480932621983716_4295253444702557788_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=saAZz1Bm9VIQ7kNvwGiTBSB&_nc_oc=AdnEXlG7yIIkOzIlKB8qM_oNKKmGzE3tYzlNGEJmcrUjVRKAo_RTtaO3ciYrh1nuD2U&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=GwRUWo606Y3qCaqCsUEFIA&oh=00_AfMaqYlCR3WvUnDz5e2D-Z3RVXvxD99Gi_eqrzonTmchvw&oe=684E1C41"
+        ]
+      },
+      {
+        name: "Rawi",
+        photos: [
+          "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/494905596_3913210785558037_2704511628152179314_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VDBgrtKARZEQ7kNvwGFooM-&_nc_oc=Adkh64eSlZ0I3xc5IYFqKoxxa6guUCnU4JDKRqRQI2EBCbxGIDeQMqgtqrrYVzj0jgY&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=pulCHe_6fw2wvFFyyU5pyw&oh=00_AfMrId_7H-HiSWqNk_FF31p5YcfcbCuCx1H4ysGdVFqutw&oe=684E1D1F",
+          "https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/493532244_3906773929535056_4475486123605042036_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mihy8Tf3Xo0Q7kNvwEOKCKw&_nc_oc=AdkkdlIt78QLeyKLov8fNKz6ReXVuxS6YFWOLB-t7UmPfe0kjstruHv5KpcZNzefXcw&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=BkUH4cklkSGN74WR62iqpw&oh=00_AfP3vHRQ6_CFqXJJQRttkQLp6NEhGvzCWGXvdrCnr9YPAQ&oe=684E2D3E"
+        ]
+      },
+      {
+        name: "Rafael",
+        photos: [
+          "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/462008505_10219525014315557_7501940677224314000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=Qs2hSPmXxHgQ7kNvwGZ_zsV&_nc_oc=AdkcDgRjZur1pjZLAGqFbKWCQe1DilDGNcTNfGoCrb_5pSSYEeW82GgBLABcRpevTUI&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=DnYi9xFtJEDaaquVU4VQLw&oh=00_AfMV8-bGSh4oZGw4UOkAy7rdMh3YwFlEayIUnJofHjCKPw&oe=684E32B1",
+          "https://scontent.fpss5-1.fna.fbcdn.net/v/t39.30808-6/462294330_10219546614895558_1371452229105884236_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=qm24VI5iPAgQ7kNvwHNsat6&_nc_oc=Adl2JKPlwKAP_2QzgFEKUcwhVgnNbjKS6AUr8N5NxOikvfpWsWSOMGcznCeTXrk96bU&_nc_zt=23&_nc_ht=scontent.fpss5-1.fna&_nc_gid=OUGo6DyqeFKUam6H657NKw&oh=00_AfOgWAggnV_kdqK1hycCmlUzY2KdZ4CZWSM4mFZHIghgJA&oe=684E0AE1"
+        ] 
+      },
+      {
+        name: "Murilo",
+        photos: [
+          href="imagem murilo.png",
+          href="Captura de tela 2025-06-10 120501.png"
+        ]
+      },
+      {
+      name: "João",
+        photos: [
+          href="imagemjoao.jpg",
+          href="imagemjoao2.jpg"
+        ]
+      },
+      {
+      name: "Isadora",
+        photos: [
+          href="isa.jpg",
+          href="isa2.jpg"
+        ]
+      },
+      {
+      name: "Maria",
+        photos: [
+          href="maria.jpeg",
+          href="maria2.jpeg"
+        ]
+      },
+      {
+      name: "Vitoria",
+        photos: [
+          href="vitoria.jpeg",
+          href="vitoria2.jpeg"
+        ]
+      },
+      {
+      name: "Carol",
+        photos: [
+          href="carol1.png",
+          href="carol2.png"
+        ]
+      },
+      {
+      name: "Pepedro",
+        photos: [
+          href="pedro.png",
+          href="pedro2.png"
+        ]
+      },
+      {
+      name: "Luiza",
+        photos: [
+          href="luiza.jpeg",
+          href="luiza1.jpeg"
+        ]
+      },
+      {
+      name: "Cauane",
+        photos: [
+          href="cauane 2.jpg",
+          href="cauane.Jpg"
+        ]
+      },
+      {
+      name: "Davi",
+        photos: [
+          href="davi.jpg",
+          href="davi2.jpg"
+        ]
+      }
+
+    ];
+
+    const container = document.getElementById('atividades');
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+
+    colegas.forEach((colega) => {
+      const card = document.createElement('div');
+      card.className = 'photo-card';
+
+      const img = document.createElement('img');
+      img.src = colega.photos[0];
+      img.alt = colega.name;
+
+      let currentIndex = 0;
+
+      // Alternar entre fotos ao clicar
+      img.addEventListener('click', (e) => {
+        e.stopPropagation(); // Impede que o modal abra quando estiver alternando fotos
+        currentIndex = (currentIndex + 1) % colega.photos.length;
+        img.src = colega.photos[currentIndex];
+      });
+
+  
+      card.addEventListener('click', (e) => {
+        if (e.target === card || e.target.classList.contains('name')) {
+          openModal(colega.photos[currentIndex], colega.name);
+        }
+      });
+
+      const nome = document.createElement('div');
+      nome.className = 'name';
+      nome.textContent = colega.name;
+
+      card.appendChild(img);
+      card.appendChild(nome);
+      container.appendChild(card);
+    });
+
+    function openModal(imageSrc, caption) {
+      modalImage.src = imageSrc;
+      modalCaption.textContent = caption || '';
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; 
+    }
+    
+     modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

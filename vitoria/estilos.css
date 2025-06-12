@@ -1,0 +1,30 @@
+   p{
+            font-size: 40px;
+            color:aqua
+        }
+        .button{
+            background-color: rgb(92, 243, 248);
+            padding: 30px;
+            border-radius: 15px;
+            font-family: 'arial black';
+            float:right
+        }
+    header{
+        text-align: center;
+        background-color: rgb(247, 250, 92);
+        border-radius: 8px;
+        padding: 30px;
+    }
+    img{
+        text-align: center;
+        background-color: rgb(247, 250, 92);
+        border-radius: 8px;
+        padding: 6px;
+    }
+
+    .cabecalho{
+        padding: 10px;
+        color:  rgb(0, 0, 0);
+    }
+    
+    

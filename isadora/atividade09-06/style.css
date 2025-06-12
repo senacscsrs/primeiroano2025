@@ -1,0 +1,14 @@
+
+body {
+background-color: pink;
+}
+
+#a{
+    width: 300px;
+}
+#b{
+    width: 50%;
+}
+#c{
+    width: 300vw;
+}
