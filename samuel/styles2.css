@@ -1,0 +1,57 @@
+/*styles2.css*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(120, 104, 198);
+}
+
+header {
+    background-color: rgb(24, 199, 167);
+    color: rgb(50, 43, 43);
+    padding: 50px 20px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 50px 20px;
+    color: rgb(120, 104, 198);
+    background-color: rgb(120, 104, 198);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color:rgb(120, 104, 198);
+}
+
+section {
+    padding: 60px 20px;
+    background-color: rgb(120, 104, 198);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/*styles2.css*/
+.botao-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.aluno-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(120, 104, 198);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.aluno-btn:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}

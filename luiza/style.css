@@ -1,13 +1,14 @@
-body {
+ body {
             font-family: Arial, sans-serif;
             background-color: #af92cd;
             color: #333;
             margin: 0;
             padding: 20px;
+    
         }
 
         h1 {
-            color: #1d1a1f;
+            color: #3e0f5e;
         }
 
         h2 {
@@ -59,4 +60,37 @@ h1{
     border: 2px solid #361b1b;
     border-radius: 10px;
     width: 400px;
+}
+h1{
+    background-color: #c89adc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+.informações{
+    text-align: center;
+    width: 400px;
+    display: flex;
+    position: sticky;
+    color: #d8beea;
+}
+.senac{
+    text-align: center;
+    width: 300px;
+    font-size: 30px;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #4a2860;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
 }
