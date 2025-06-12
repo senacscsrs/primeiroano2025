@@ -87,8 +87,9 @@ h1{
 .senac {
     background-color: #3e0f5e;
     padding: 50px;
-    margin: 10px;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #af92cd;
+    margin: 10px;
+    padding: 50px;
 }
