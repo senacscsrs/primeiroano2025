@@ -20,7 +20,7 @@
     }
 
     header {
-      background: linear-gradient(90deg, #001157, #0033a0);
+      background: linear-gradient(90deg, #000000, #000000);
       padding: 1rem 2rem;
       color: white;
       position: fixed;
@@ -73,7 +73,7 @@
 
     h2 {
       margin-bottom: 1rem;
-      color: #001157;
+      color: #000000;
     }
 
     h3 {
@@ -85,7 +85,7 @@
     }
 
     button {
-      background: #001157;
+      background: #000000;
       color: white;
       border: none;
       padding: 14px 28px;
@@ -98,7 +98,7 @@
     }
 
     button:hover {
-      background: #0033a0;
+      background: #000000;
       transform: scale(1.05);
     }
 
@@ -111,16 +111,9 @@
       border-top: 1px solid #ccc;
     }
 
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
       button {
         width: 100%;
       }
-    }
   </style>
 </head>
 <body>
@@ -131,6 +124,7 @@
       <a href="index.html">Início</a>
       <a href="aba.html">Atividades</a>
       <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre mim </a>
     </nav>
   </header>
 
@@ -138,20 +132,15 @@
     <section id="inicio">
       <h2>Início</h2>
       <h3>Você conseguiu encontrar o meu site.</h3>
-      <p>Agora use e se lambuze com as diversidades que tem ou no caso o rawizinho.</p>
+      <p>Agora se divirta com o meu site.</p>
     </section>
 
     <section>
       <h2>Interação</h2>
       <p>Clique no botão abaixo para trocar a cor de fundo da página aleatoriamente:</p>
-      <button id="btnCor">Trocar cor de fundo</button>
+      <button id="btnCor">Trocar cor de fundo</button>  
     </section>
   </main>
-
-  <footer>
-    Feito com 💓 pelo Super João
-  </footer>
-
   <script>
     const btnCor = document.getElementById('btnCor');
 
@@ -160,8 +149,6 @@
       const g = Math.floor(Math.random() * 256);
       const b = Math.floor(Math.random() * 256);
       const bg = `rgb(${r},${g},${b})`;
-
-      // Calcula contraste para o botão
       const yiq = (r * 299 + g * 587 + b * 114) / 1000;
       const textoCor = yiq >= 128 ? 'black' : 'white';
 
