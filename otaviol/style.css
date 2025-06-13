@@ -1,9 +1,14 @@
-body{
+main{
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+body{
+    background-color: black;
+}
+
 .button{
     background-color: grey;
     padding: 15px 20px;;
@@ -11,6 +16,7 @@ body{
     color: white;
     font-family: 'broadway';
     transition: all 0.5s ease;
+    align-items: center;
     
 }
 .button:hover{
@@ -21,4 +27,14 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+header{
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+}
+
+footer{
+    color:white;
+    text-align: center;
 }
