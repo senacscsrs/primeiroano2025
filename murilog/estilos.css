@@ -1,12 +1,12 @@
 body {
             font-family: Arial, sans-serif;
-            background-color: #2A004E;
+            background-color: #e6f2ff;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #FF8000;
+            background-color: #00ffff;
             color: white;
             padding: 20px;
             text-align: center;
@@ -26,7 +26,7 @@ body {
         }
 
         .projeto {
-            background-color: #2A004E;
+            background-color: #00ffff;
             color: white;
             border: none;
             padding: 15px;
@@ -37,12 +37,12 @@ body {
         }
 
         .projeto:hover {
-           background-color:#C62300;
+            background-color: #00ffff;
         }
 
         footer {
             text-align: center;
-            background-color: #FF8000;
+            background-color: #00ffff;
             color: white;
             padding: 10px;
             margin-top: 40px;
@@ -56,42 +56,3 @@ body {
         @media (max-width: 400px){
 
         }
-        .cabecalho{
-            align-content: center;
-            padding: 20px;
-            color:white;
-            font-size: 15px;
-            border-radius: 30px;
-        }
-    .container {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-      padding: 10px;
-      background-color: #FF8000;
-      border-radius: 10px;
-    }
-
-    .container img {
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .texto {
-      font-family: Arial, sans-serif;
-      max-width: 400px;
-    }
-    .projetos-container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #FF8000;
-    border-radius: 10px;
-    align-items: center;
-}
-#contato{
-    font-size: 35px;
-    text-align: center;
-}
