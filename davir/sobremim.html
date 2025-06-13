@@ -30,7 +30,7 @@
     header {
       background-color: var(--primary-color);
       color: var(--text-light);
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
       position: relative;
     }
 
@@ -39,14 +39,8 @@
       font-weight: 800;
     }
 
-        nav {
+    nav {
       margin-top: 0.5rem;
-    }
-
-    .menu-btn {
-      display: none;
-      font-size: 1.5rem;
-      cursor: pointer;
     }
 
     nav ul {
@@ -85,7 +79,7 @@
 
     .banner h1 {
       position: relative;
-      color: white;
+      color: rgb(253, 253, 253);
       font-size: 2.5rem;
       z-index: 1;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
@@ -149,19 +143,8 @@
     /* Responsivo */
     @media (max-width: 768px) {
       nav ul {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-        padding-top: 1rem;
-      }
-
-      nav ul.show {
-        display: flex;
-      }
-
-      .menu-btn {
-        display: block;
-        color: white;
+        flex-direction: wrap;
+        align-items: center;
       }
 
       .banner h1 {
@@ -189,7 +172,6 @@
   <header>
     <nav>
       <div class="logo">Ensino Médio <strong>Senac</strong></div>
-      <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
       <ul id="nav-links">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Mim</a></li>
@@ -206,7 +188,7 @@
   <section class="about-container">
   <img class="profile-pic" src="https://photos.fife.usercontent.google.com/pw/AP1GczPN1E9RDOvLxZ7t-ZBq6BqwIjuTESpo8y4qWAb6e2bN5NoLNBrzUJNB4w=w234-h351-s-no-gm?authuser=0" alt="Foto de Davi Gabriel Rodrigues"/>
   <h2>Olá! Eu sou Davi Gabriel Rodrigues</h2>
-  <p>Sou um entusiasta de futebol e tecnologia que criou este site para compartilhar meus projetos durante os três anos de ensino médio.</p>
+  <p>Esse site tem o propósito de mostrar os sites aonde desenvolvi durante os meus tres anos de ensino medio.</p>
   <p>Combinando design e programação, desenvolvi esse site para quem quer conhecer mais sobre mim. Este é um projeto pessoal feito com muito carinho e dedicação!</p>
 
 </section>
