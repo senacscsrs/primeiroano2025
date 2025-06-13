@@ -28,7 +28,7 @@
     header {
       background-color: var(--primary);
       color: var(--light);
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
     }
 
     header div {
@@ -36,12 +36,21 @@
       font-weight: bold;
     }
 
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+    
     nav ul {
       list-style: none;
       display: flex;
       gap: 1.5rem;
       padding: 0;
-      margin-top: 0.5rem;
     }
 
     nav ul li a {
@@ -148,7 +157,7 @@
 <body>
 
   <header>
-    <div>Ensino Medio <strong>senac</strong></div>
+    <div class="logo">Ensino Medio <strong>senac</strong></div>
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
