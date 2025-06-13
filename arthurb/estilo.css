@@ -10,23 +10,23 @@ body{
 .titulo {
     background-color: #a0c532;
     color: #FFFADC;
-    padding: 30px;
-    font-size: 30px
+    padding: 35px;
+    font-size: 35px
 }
 .title{
     margin: auto;
     text-align: center;
     color: #a0c532;
-    font-size: 25px
+    font-size: 35px
 }
 
 button {
     background-color: #a0c532;
     color: white;
-    padding: 18px 20px;
+    padding: 22px 28px;
     border: none;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
