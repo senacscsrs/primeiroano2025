@@ -271,10 +271,8 @@
       img.alt = colega.name;
 
       let currentIndex = 0;
-
-      // Alternar entre fotos ao clicar
       img.addEventListener('click', (e) => {
-        e.stopPropagation(); // Impede que o modal abra quando estiver alternando fotos
+        e.stopPropagation();
         currentIndex = (currentIndex + 1) % colega.photos.length;
         img.src = colega.photos[currentIndex];
       });
