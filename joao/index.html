@@ -141,11 +141,6 @@
       <button id="btnCor">Trocar cor de fundo</button>  
     </section>
   </main>
-
-  <footer>
-    Feito com 💓 pelo Super João
-  </footer>
-
   <script>
     const btnCor = document.getElementById('btnCor');
 
@@ -154,8 +149,6 @@
       const g = Math.floor(Math.random() * 256);
       const b = Math.floor(Math.random() * 256);
       const bg = `rgb(${r},${g},${b})`;
-
-      // Calcula contraste para o botão
       const yiq = (r * 299 + g * 587 + b * 114) / 1000;
       const textoCor = yiq >= 128 ? 'black' : 'white';
 
