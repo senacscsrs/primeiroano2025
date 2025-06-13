@@ -1,22 +1,49 @@
-.vermelho {color: red;}
-.azul{color:blue}
-.duende{color:rgb(42, 175, 42)}
-.doutor{color:rgb(255, 215, 0)}
-.venom{color:black}
-.lagarto{color:rgb(20, 107, 20)}
-.areia{color:rgb(194, 178, 128)}
-.abutre{color:rgb(79, 128, 79)}
-.mysterio{color:rgb(128, 0, 128)}
-.rhino{color:rgb(128, 128, 128)}
-.venom2{color:rgb(255, 0, 0)}
-.electro{color:rgb(255, 255, 0)}
-
 body {
-    background-color: rgb(194, 194, 168);
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 40px;
 }
- p {
-      font-size: 18px;
-    }
-     li {
-    font-size: 20px;
-  }
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.botao {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.botao:hover {
+  background-color: #45a049;
+}
+
+.voltar {
+  background-color: #4CAF50;
+}
+
+.voltar:hover {
+  background-color: #45a049;
+}

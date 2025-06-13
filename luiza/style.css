@@ -1,0 +1,96 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #af92cd;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+    
+        }
+
+        h1 {
+            color: #3e0f5e;
+        }
+
+        h2 {
+            color: #5e3443;
+        }
+
+        ol,
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .gatos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #5e3443;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .spotify {
+            background-color: #345e3f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        img{
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    border: 2px solid #361b1b;
+    border-radius: 10px;
+    width: 400px;
+}
+h1{
+    background-color: #c89adc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+.informações{
+    text-align: center;
+    width: 400px;
+    display: flex;
+    position: sticky;
+    color: #d8beea;
+}
+.senac{
+    text-align: center;
+    width: 300px;
+    font-size: 30px;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #4a2860;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
