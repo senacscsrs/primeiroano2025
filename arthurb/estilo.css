@@ -1,20 +1,29 @@
-.Titulo {
-    background-color: black;
-    color: aliceblue;
-    padding: 25px;
-    font-size: 24px
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-h1 {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FFFADC;
+}
+.titulo {
+    background-color: #a0c532;
+    color: #FFFADC;
+    padding: 30px;
+    font-size: 30px
+}
+.title{
     margin: auto;
     text-align: center;
-    font-size: 48px
+    color: #a0c532;
+    font-size: 25px
 }
 
 button {
-    background-color: #000000;
+    background-color: #a0c532;
     color: white;
-    padding: 8px 10px;
+    padding: 18px 20px;
     border: none;
     border-radius: 12px;
     font-size: 16px;
@@ -24,9 +33,19 @@ button {
 }
 
 .botoes{
+    /*centralizar*/
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
+}
 
+footer {
+  background-color: #a0c532;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px
 }
