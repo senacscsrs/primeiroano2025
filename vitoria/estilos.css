@@ -36,11 +36,12 @@
 
     
   .container {
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
+     
     display: flex;
-    flex-direction: column;
+    
     gap: 10px;
+    
+    
   }
   .centro {
     width: 200px;
@@ -99,4 +100,9 @@
 .emcima{
     display:flex;
    
+}
+.imagem{
+  display: flex;
+  justify-content: center;
+
 }
