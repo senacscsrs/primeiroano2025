@@ -1,13 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#FFFADC;
+    background-color: #FFFADC;
 }
-.titulo {
+.Titulo {
     background-color: #a0c532;
     color: #FFFADC;
     padding: 30px;
@@ -37,6 +32,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 10px;
+<<<<<<< HEAD
 }
 
 footer {
@@ -48,4 +44,6 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 25px
+=======
+>>>>>>> 95a1c1fc1c84ea6d029b3fe918a38dab12e9390e
 }
