@@ -11,18 +11,20 @@ body{
     padding: 20px;
 
 }
-div{
-    text-align: center;
-    border: 2px solid #771a5b;
-    border-radius: 10px;
-    width: 400px;
+div.gatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 .introdução{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.spotify {
+.playlist {
             background-color: #203f28;
             color: rgb(0, 0, 0);
             border: none;
@@ -30,7 +32,33 @@ div{
             cursor: pointer;
             font-size: 16px;
             border-radius: 5px;
-        }
+            position: relative;
+}
+.playlist:hover {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 5px rgb(27, 61, 27);
+  }
+  to {
+    box-shadow: 0 0 20px rgb(104, 143, 104), 0 0 40px rgb(20, 45, 20);
+  }
+}
+
+        
+        .playlist:hover {
+            background-color: #51ac72;
+            color: #fff;
+            transition:background-color 0.3s, color 0.3s;
+}
+
+
+        
         h2 {
             color: #a460a9;
             background-color: #542c58;
@@ -40,5 +68,28 @@ div{
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
+            margin: 10px 0;
         }
-
+.rainbow-text {
+     font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(270deg, rgb(87, 134, 181), rgb(77, 73, 141), rgb(103, 66, 130), rgb(89, 52, 111), rgb(98, 47, 104), rgb(130, 0, 119), rgb(118, 30, 65));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+    @keyframes rainbow {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+.zoom {
+  transition: transform 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.zoom:hover {
+  transform: scale(1.2);
+}
+  
