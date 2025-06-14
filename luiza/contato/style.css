@@ -17,14 +17,31 @@ section {
     padding: 10px;
     border: 1px solid #41164e;
     border-radius: 15px;
-    background-color: #985093;
+    background-color: #8758a4;
     box-shadow: #1f0a26 0px 0px 10px;
     text-shadow: #41164e 1px 1px 2px;
-    color: #7840b5;
+    color: #7954a0;
 }
 .social-icons a {
-    color: #7840b5;
+    color: #8364a3;
     text-decoration: none;
     margin-right: 10px;
     position: relative;
+}
+.redes {
+    background-color: #624681;
+    color: #a98dc6;
+    text-decoration: none;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 5px;
+    size-adjust: 100%;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.redes:hover {
+    background-color: #4e3c74;
+    color: #6981c5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(141, 101, 170, 0.2);
 }
