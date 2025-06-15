@@ -95,3 +95,18 @@ body {
     font-size: 35px;
     text-align: center;
 }
+.logo-size{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.gmail-size{
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 6px;
+    margin-right: 1px;
+}
