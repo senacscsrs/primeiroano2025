@@ -2,7 +2,7 @@ img{
     border-radius: 10px;
 }
 h1{
-    text-align: center;
+    text-align: left;
 }
 body{
     background-color: #a474c5;
@@ -24,38 +24,7 @@ div.gatos {
     justify-content: center;
     align-items: center;
 }
-.playlist {
-            background-color: #203f28;
-            color: rgb(0, 0, 0);
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            position: relative;
-}
-.playlist:hover {
-  background-color: #111;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  animation: pulse 1.5s infinite alternate;
-}
-@keyframes pulse {
-  from {
-    box-shadow: 0 0 5px rgb(27, 61, 27);
-  }
-  to {
-    box-shadow: 0 0 20px rgb(104, 143, 104), 0 0 40px rgb(20, 45, 20);
-  }
-}
 
-        
-        .playlist:hover {
-            background-color: #51ac72;
-            color: #fff;
-            transition:background-color 0.3s, color 0.3s;
-}
 
 
         
@@ -80,6 +49,8 @@ div.gatos {
     background-clip: text;
     color: transparent;
     animation: rainbow 5s linear infinite;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.045);
+    
 }
     @keyframes rainbow {
     0% { background-position: 0% }
