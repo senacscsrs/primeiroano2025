@@ -43,7 +43,6 @@ ul {
 li {
   margin-bottom: 10px;
 }
-
  
 /* Estilo dos botões */
 button {
@@ -67,7 +66,7 @@ button:hover {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
-  flex-wrap: wrap;                  /* Quebra linha se necessário */
+  flex-wrap: wrap;              /* Quebra linha se necessário */
 }
  
 nav {
