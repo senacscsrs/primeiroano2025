@@ -30,10 +30,12 @@
     header {
       background-color: var(--primary-color);
       color: var(--text-light);
-      padding: 1rem 1.5rem;
-      position: relative;
+      padding: 1rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-
+    
     .logo {
       font-size: 1.75rem;
       font-weight: 800;
@@ -187,7 +189,8 @@
   </div>
 
   <section class="about-container">
-  <img src="IMG-20240401-WA0028 (1).jpg" alt="Foto de Davi Gabriel Rodrigues"/>
+    <img src="minhafoto.jpg" alt="Foto de Davi Gabriel Rodrigues" class="profile-pic"/>
+    <section>
   <h2>Olá! Eu sou Davi Gabriel Rodrigues</h2>
   <p>Esse site tem o propósito de mostrar os sites aonde desenvolvi durante os meus tres anos de ensino medio.</p>
   <p>Combinando design e programação, desenvolvi esse site para quem quer conhecer mais sobre mim. Este é um projeto pessoal feito com muito carinho e dedicação!</p>
