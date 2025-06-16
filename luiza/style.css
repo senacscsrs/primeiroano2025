@@ -38,16 +38,6 @@
             font-size: 16px;
             border-radius: 5px;
         }
-
-        .spotify {
-            background-color: #345e3f;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
         img{
             border-radius: 10px;
         }
@@ -150,4 +140,26 @@ header{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.rainbow-text {
+     font-size: 2rem;
+    font-weight: bold;
+    text-shadow: #060506;
+    background: linear-gradient(270deg, rgb(87, 134, 181), rgb(77, 73, 141), rgb(103, 66, 130), rgb(89, 52, 111), rgb(98, 47, 104), rgb(130, 0, 119), rgb(118, 30, 65));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+    @keyframes rainbow {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+.zoom {
+  transition: transform 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.zoom:hover {
+  transform: scale(1.2);
 }
