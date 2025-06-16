@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atividades - Site do João</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      flex: 1 1 100%;
+      margin-top: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex: 1 1 100%;
+    }
+
+    nav a {
+      background: #000000;  
+      color: #fff;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a:hover {
+      background: #3f3939;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #000000;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Atividades</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="aba.html">Atividades</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre mim </a>
+    </nav>
+    
+  </header>
+
+  <main>
+    <h2>Escolha uma das atividades abaixo:</h2>
+    <div class="cards">
+      <a class="card" href="atividade1.html">Atividade 1</a>
+      <a class="card" href="atividade2.html">Atividade 2</a>
+      <a class="card" href="atividade3.html">Atividade 3</a>
+      <a class="card" href="atividade4.html">Atividade 4</a>
+      <a class="card" href="atividade5.html">Atividade 5</a>
+      <a class="card" href="atividade6.html">Atividade 6</a>
+    </div>
+  </main>
+</body>
+</html>
