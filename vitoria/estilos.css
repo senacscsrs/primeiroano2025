@@ -23,7 +23,7 @@
     }
     img{
         
-        background-color:rgb(73, 80, 173);
+        background-color:#FFFA8D;
         border-radius: 8px;
         padding: 6x;
     }
@@ -38,8 +38,7 @@
   .container {
      
     display: flex;
-flex-direction: column;
-    margin-left:170px;
+    
     gap: 10px;
     
     
@@ -53,9 +52,9 @@ flex-direction: column;
 
 
   h1{
-    background-color: rgb(73, 80, 173);
+    background-color:pink ;
     color: white;
-    padding: 10px;
+    padding: 40px;
     font-size: 30px;
     width: 100%;
     text-align: center;
@@ -72,8 +71,8 @@ flex-direction: column;
     font-size: 20px;
   }
   .button {
-    background-color: rgb(73, 80, 173);
-    padding: 30px;
+    background-color: pink;
+    padding: 10x;
     margin: 20px auto;
     width: 100px;
     border-radius: 10px;
@@ -106,13 +105,4 @@ flex-direction: column;
   display: flex;
   justify-content: center;
 
-}
-.junto{
-    background-color: rgb(73, 80, 173);
-    color: white;
-    padding: 20px;
-    font-size: 30px;
-    width: 100%;
-    text-align: center;
-    border-radius: 8px;
 }
