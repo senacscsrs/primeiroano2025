@@ -31,15 +31,15 @@ h3 {
 }
 
 button {
-  background-color: #007BFF;      /* Cor de fundo azul */
-  color: white;                   /* Texto branco */
-  border: none;                   /* Sem borda */
-  padding: 10px 20px;             /* Espaçamento interno */
-  border-radius: 5px;             /* Cantos arredondados */
-  cursor: pointer;                /* Cursor em formato de mão */
-  font-size: 16px;                /* Tamanho da fonte */
-  transition: background-color 0.3s ease; /* Transição suave */
-  margin: 10px;                   /* Espaço entre os botões */
+  background-color: #007BFF;        /* Cor de fundo azul */
+  color: white;                     /* Texto branco */
+  border: none;                     /* Sem borda */
+  padding: 15px 30px;               /* Botões maiores */
+  border-radius: 8px;               /* Cantos arredondados */
+  cursor: pointer;                  /* Cursor em formato de mão */
+  font-size: 18px;                  /* Fonte maior */
+  transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
 button:hover {
@@ -51,4 +51,9 @@ button:hover {
   justify-content: center;
   gap: 10px; /* Espaço entre os botões */
   margin-top: 20px;
+  background-color: #cce0ff; /* azul claro para destacar o cabeçalho */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.2);
 }

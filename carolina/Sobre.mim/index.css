@@ -14,9 +14,8 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 128, 0.2);
 }
 
-
 h1 {
-  color: #004aad; /* azul médio */
+  color: #004aad;
   text-align: center;
 }
 
@@ -30,6 +29,63 @@ h3 {
   margin-top: 30px;
   text-align: center;
 }
+
+ul {
+  background-color: #cce0ff;
+  padding: 15px;
+  border-radius: 10px;
+  list-style-type: square;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img {
+  background-color: #cce0ff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.2);
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.2);
+}
+
+/* Estilo dos botões */
+button {
+  background-color: #007BFF;        /* Cor de fundo azul */
+  color: white;                     /* Texto branco */
+  border: none;                     /* Sem borda */
+  padding: 15px 30px;               /* Botões maiores */
+  border-radius: 8px;               /* Cantos arredondados */
+  cursor: pointer;                  /* Cursor em formato de mão */
+  font-size: 18px;                  /* Fonte maior */
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;        /* Cor ao passar o mouse */
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;                  /* Quebra linha se necessário */
+}
+
+nav {
+  margin-top: 20px;
+}
+
 
 ul {
   background-color: #cce0ff;
