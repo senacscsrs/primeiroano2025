@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Meu portifólio</title>
+    <title>Document</title>
 </head>
 <body>
-    <h3>Projetos</h3>
+    <header>
+        <h1><strong>Meu portfólio</strong></h1>
+        <h2><em>Carolina de Oliveira Correia</em></h2>
+        <nav>
+            <button onclick="document.getElementById('sobre-mim').scrollIntoView({ behavior: 'smooth' });">Sobre mim</button>
+            <button onclick="document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });">Projetos</button>
+        </nav>
+        <hr>
+    </header>
+    <h1><strong>Projetos</strong></h1>
     <div class="botoes">
     <!-- Botão para Projeto 1 -->
     <button onclick="window.location.href='projeto.1/'">Projeto 1</button>
