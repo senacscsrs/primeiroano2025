@@ -23,7 +23,7 @@
     }
     img{
         
-        background-color:#FFFA8D;
+        background-color:rgb(73, 80, 173);
         border-radius: 8px;
         padding: 6x;
     }
@@ -36,11 +36,13 @@
 
     
   .container {
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
+     
     display: flex;
-    flex-direction: column;
+flex-direction: column;
+    margin-left:170px;
     gap: 10px;
+    
+    
   }
   .centro {
     width: 200px;
@@ -51,9 +53,9 @@
 
 
   h1{
-    background-color:pink ;
+    background-color: rgb(73, 80, 173);
     color: white;
-    padding: 40px;
+    padding: 10px;
     font-size: 30px;
     width: 100%;
     text-align: center;
@@ -70,8 +72,8 @@
     font-size: 20px;
   }
   .button {
-    background-color: pink;
-    padding: 10x;
+    background-color: rgb(73, 80, 173);
+    padding: 30px;
     margin: 20px auto;
     width: 100px;
     border-radius: 10px;
@@ -99,4 +101,18 @@
 .emcima{
     display:flex;
    
+}
+.imagem{
+  display: flex;
+  justify-content: center;
+
+}
+.junto{
+    background-color: rgb(73, 80, 173);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
 }
