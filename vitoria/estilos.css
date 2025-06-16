@@ -105,7 +105,6 @@
   display: flex;
   justify-content: center;
 
-<<<<<<< HEAD
 }
 .junto{
     background-color: rgb(73, 80, 173);
@@ -138,6 +137,4 @@
   .botao2:hover{
       transform: scale(1.1 );
   }
-=======
 }
->>>>>>> 0473b10b64d120fd449ea6579160563daa6f64fb
