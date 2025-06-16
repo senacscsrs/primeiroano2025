@@ -13,7 +13,7 @@
     }
  
     .navbar a:hover {
-        background-color: #575757;
+        background-color: #132443;
     }
  
     body {
@@ -25,15 +25,11 @@
         padding: 10px;
         flex: 1;
     }
-    .wrapper{
-        min-height: 79vh;
-        display: flex;
-        flex-direction: column;
-    }
+
     #senac{
         position:absolute;
         top: 2px;
         left: 20px;
         color: white;
         font-size: 20px;
-    }
+    }                     
