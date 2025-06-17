@@ -1,0 +1,25 @@
+
+body{
+background-color: rgb(199, 42, 68);
+color: beige;
+text-align: center;
+}
+header{
+    background-color: pink;
+    text-align: center;
+    border-radius: 10px;
+}
+.cabecalho{color:rgb(199, 42, 68);
+background-color: pink;
+border-radius: 100px;
+font-size: 200%;
+}
+h1{ 
+    background-color: pink;
+    text-align: center;
+    color:rgb(199, 42, 68);
+font-size: 300%;}
+    h2{color:rgb(199, 42, 68);
+    font-size: 250%;}
+
+
