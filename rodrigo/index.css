@@ -99,6 +99,59 @@ h1{
   transition: all ease .3s;
 }
 
+.container {
+    z-index: 1000;
+    width: 50vw;
+    height: 30vw;
+    background-color: #0d1b2a;
+    display: flex;
+    justify-content: center;           
+    align-items: center;
+    margin: 2vw auto;
+    border-radius: 2vw;
+color: #ffffff;
+
+
+}
+.container h2 {
+    font-size: 1.5vw;
+    text-align:center ;
+    padding: 5vw;
+    line-height: -50vw;
+    font-family: "Italiana", sans-serif;
+}
+.container h2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bodyb *, .bodyb *::before, .bodyb *::after {
 	content: '';
