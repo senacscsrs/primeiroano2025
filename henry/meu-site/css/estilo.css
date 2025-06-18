@@ -1,36 +1,67 @@
+/* Fonte e estilo base */
 body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #e0e0e0;
+  background: linear-gradient(135deg, #d6dbdd, #d6dbdd, #d6dbdd);
+  color: #000000;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-header {
-  padding: 40px 20px 10px;
+/* Cabeçalho geral */
+.cabecalho {
+  background-color: #ffffff;
+  padding: 60px 20px 40px;
+  box-shadow: 0 4px 12px #00000022;
 }
 
-h1 {
-  font-size: 36px;
-  color: #00aced;
+.cabecalho-conteudo h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #000;
 }
 
-h2 {
-  font-size: 30px;
-  color: #00aced;
-  margin-top: 30px;
+.cabecalho-conteudo h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
 }
 
-p {
+.cabecalho-conteudo p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 20px auto 0;
+}
+
+/* Área principal */
+.area-principal {
+  padding: 50px 20px;
+}
+
+/* Seção de atividades na index */
+.secao-atividades {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00000022;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.secao-atividades h2 {
+  font-size: 28px;
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.secao-atividades p {
   font-size: 16px;
-  color: #ccc;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-main {
-  padding: 30px;
-}
-
+/* Botão */
 .botao-atividades {
   display: inline-block;
   padding: 15px 30px;
@@ -40,7 +71,6 @@ main {
   border: none;
   border-radius: 12px;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .botao-atividades:hover {
@@ -48,6 +78,7 @@ main {
   transform: scale(1.05);
 }
 
+/* Cards de atividades */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -57,26 +88,19 @@ main {
 }
 
 .card {
-  background-color: #1f1f1f;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
   width: 280px;
-  box-shadow: 0 0 10px #00000055;
+  box-shadow: 0 0 10px #00000030;
   transition: transform 0.3s ease;
+  text-align: left;
 }
 
 .card:hover {
   transform: scale(1.03);
 }
 
-.voltar {
-  display: inline-block;
-  margin: 40px 0;
-  color: #ccc;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.voltar:hover {
-  text-decoration: underline;
+.card h3 {
+  font
 }

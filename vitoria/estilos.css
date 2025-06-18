@@ -23,7 +23,7 @@
     }
     img{
         
-        background-color:#FFFA8D;
+        background-color:rgb(73, 80, 173);
         border-radius: 8px;
         padding: 6x;
     }
@@ -38,7 +38,8 @@
   .container {
      
     display: flex;
-    
+flex-direction: column;
+    margin-left:170px;
     gap: 10px;
     
     
@@ -52,9 +53,9 @@
 
 
   h1{
-    background-color:pink ;
+    background-color: rgb(73, 80, 173);
     color: white;
-    padding: 40px;
+    padding: 10px;
     font-size: 30px;
     width: 100%;
     text-align: center;
@@ -71,8 +72,8 @@
     font-size: 20px;
   }
   .button {
-    background-color: pink;
-    padding: 10x;
+    background-color: rgb(73, 80, 173);
+    padding: 30px;
     margin: 20px auto;
     width: 100px;
     border-radius: 10px;
@@ -105,7 +106,6 @@
   display: flex;
   justify-content: center;
 
-<<<<<<< HEAD
 }
 .junto{
     background-color: rgb(73, 80, 173);
@@ -116,28 +116,3 @@
     text-align: center;
     border-radius: 8px;
 }
-#insta{
-  position: relative;
-  right: 20px;
-}
-.junto .botao2{
-  
-  background-color:  #ffffff;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-    margin-left: 1200px;
-    border-radius: 30px;
-    font-family: 'arial black';
-    text-align: center;
-    transition: transform 0.2s;
-    color: black;
-   
- 
-  }
-  .botao2:hover{
-      transform: scale(1.1 );
-  }
-=======
-}
->>>>>>> 0473b10b64d120fd449ea6579160563daa6f64fb
