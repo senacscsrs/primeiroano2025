@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FFFADC;
+}
+h1 {
+    background-color: #a0c532;
+    color: #FFFADC;
+    padding: 35px;
+    font-size: 45px
+}
