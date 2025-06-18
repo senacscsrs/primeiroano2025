@@ -3,7 +3,6 @@
             background-color: #af92cd;
             color: #333;
             margin: 0;
-            padding: 20px;
         }
         
 
@@ -39,16 +38,6 @@
             font-size: 16px;
             border-radius: 5px;
         }
-
-        .spotify {
-            background-color: #345e3f;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
         img{
             border-radius: 10px;
         }
@@ -65,7 +54,8 @@
       top: 20px;
       z-index: 1000;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-size-adjust: 100%;
+        size-adjust: 100%;
+        
     }
 h1{
     text-align: center;
@@ -99,15 +89,77 @@ h1{
       font-weight: 800;
       letter-spacing: 1px;
         padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .informações {
     background-color: #582762;
+    
     padding: 10px;
-    margin: 20px auto;
-    width: 80%;
+    margin: 10px auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #af92cd;
+    color: #44164a;
+    transition: transform 0.2s;
+    font-family: 'arial black';
+    text-align: center;
+    
 }
-
-
+    .informações a {
+    text-decoration: none;
+    background-color: #8e537c;
+    font-weight: bold;
+    color: #531263;
+}
+.informações:hover {
+    transform: scale(1.05);
+    background-color: #7e4b60;
+    color: #2c0d23;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.rodape{
+    background-color: #582762;
+    color: #060506;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.botaos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.rainbow-text {
+     font-size: 2rem;
+    font-weight: bold;
+    text-shadow: #060506;
+    background: linear-gradient(270deg, rgb(87, 134, 181), rgb(77, 73, 141), rgb(103, 66, 130), rgb(89, 52, 111), rgb(98, 47, 104), rgb(130, 0, 119), rgb(118, 30, 65));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+    @keyframes rainbow {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+.zoom {
+  transition: transform 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.zoom:hover {
+  transform: scale(1.2);
+}
