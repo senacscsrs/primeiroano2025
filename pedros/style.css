@@ -1,0 +1,34 @@
+.navbar {
+        background-color: #000364;
+        overflow: hidden;
+        padding: 10px 20px;
+        text-align: right;
+    }
+ 
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: inline-block;
+    }
+ 
+    .navbar a:hover {
+        background-color: #132443;
+    }
+ 
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+ 
+    .content {
+        padding: 10px;
+        flex: 1;
+    }
+    #senac{
+        position:absolute;
+        top: 2px;
+        left: 20px;
+        color: white;
+        font-size: 20px;
+    }

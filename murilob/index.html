@@ -1,11 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-list li {
+      background: rgba(255, 255, 255, 0.1);
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    
+  <header>
+    <h1>Murilo Soder</h1>
+    <p>Portfólio pessoal de projetos e ideias</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showTab('sobre')">Sobre Mim</a>
+    <a href="#" onclick="showTab('projetos')">Projetos</a>
+    <a href="#" onclick="showTab('contato')">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre" class="active">
+      <h2>Sobre Mim</h2>
+      <div class="info">
+        <p>Olá, eu sou o Murilo!
+Tenho 17 anos, Estou aprendendo a fazer minha primeira index.  Gosto de aproveitar meu tempo livre jogando futebol, ouvindo música e explorando novas ideias para meus projetos.
+Neste portfólio, você vai encontrar alguns dos meus trabalhos, ideias e tudo aquilo que representa meu estilo e dedicação.</p>
+        <p>Estou sempre aberto a novas oportunidades e colaborações. Se você quiser conversar, não hesite em me contatar!</p
+
+>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <ul class="project-list">
+        <li>
+          <strong>Portifólio <a href=http://127.0.0.1:5500/index.html# target="_blank" style="color: #ffd700;">Aqui!</a></p>
+          Este é o meu portfólio pessoal, onde apresento meus projetos e habilidades.
+        
+        </li>
+        <li>
+          <strong>Projeto 2 <a href=http://127.0.0.1:5500/atividade09-06/index.html target="_blank" style="color: #ffd700;">Blocos</a></p>
+          Com 3 blocos de tamanhos diferentes, cada um com uma imagem.
+        </li>
+        <li>
+          <strong>Projeto 3</strong><br>
+          Em andamento com mais detalhes em breve.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: murilosoder2gmail.com</p>
+      <p>Instagram: <a href=https://www.instagram.com/murilosoder/ target="_blank" style="color: #ffd700;">@murilosoder</a></p>
+      <p>GitHub: <a href="https://github.com/Murilosoder" target="_blank" style="color: #ffd700;">github.com/Murilosoder</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Murilo Soder. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('main section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
+<
