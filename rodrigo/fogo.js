@@ -220,3 +220,5 @@ window.addEventListener("load", function () {
     fireworks.push(new Firework(x, y, targetY, color, speed, size));
   });
 });
+
+
