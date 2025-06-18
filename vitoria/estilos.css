@@ -4,7 +4,7 @@
             color: black;
             padding: 20px;
 
-            
+             
             
         }
         .button{
@@ -23,7 +23,7 @@
     }
     img{
         
-        background-color:#FFFA8D;
+        background-color:rgb(73, 80, 173);
         border-radius: 8px;
         padding: 6x;
     }
@@ -52,7 +52,7 @@
 
 
   h1{
-    background-color:pink ;
+    background-color:rgb(73, 80, 173) ;
     color: white;
     padding: 40px;
     font-size: 30px;
@@ -71,7 +71,7 @@
     font-size: 20px;
   }
   .button {
-    background-color: pink;
+    background-color: rgb(73, 80, 173);
     padding: 10x;
     margin: 20px auto;
     width: 100px;
@@ -105,4 +105,36 @@
   display: flex;
   justify-content: center;
 
+}
+.junto{
+    background-color: rgb(73, 80, 173);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+#insta{
+  position: relative;
+  right: 20px;
+}
+.junto .botao2{
+  
+  background-color:  #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 1200px;
+    border-radius: 30px;
+    font-family: 'arial black';
+    text-align: center;
+    transition: transform 0.2s;
+    color: black;
+   
+ 
+  }
+  .botao2:hover{
+      transform: scale(1.1 );
+  }
 }
