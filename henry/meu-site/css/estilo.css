@@ -71,7 +71,6 @@ body {
   border: none;
   border-radius: 12px;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .botao-atividades:hover {
@@ -104,3 +103,4 @@ body {
 
 .card h3 {
   font
+}
