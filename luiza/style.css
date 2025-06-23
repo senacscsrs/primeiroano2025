@@ -163,3 +163,15 @@ header{
 .zoom:hover {
   transform: scale(1.2);
 }
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+/* Switch para dark mode */
+.switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.switch input { display: none; }
