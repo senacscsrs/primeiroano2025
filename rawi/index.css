@@ -120,9 +120,71 @@ button {
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4701fdd3ca4a70c7b4fb8f117125043e8c3363c7
 .social-icon {
   width: 20px;
   height: 20px;
   margin-right: 8px;
 }
+<<<<<<< HEAD
+=======
+
+.Curriculo {
+  width: 21cm;
+  height: 33.7cm;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 2cm;
+  box-sizing: border-box;
+  color: black;      
+  border: 3px solid #ccc;
+}
+.Curriculo h1 {
+  font-size: 24px;
+  margin-bottom: 20px;  
+  display: flex;
+  flex-direction: column;       
+  justify-content: flex-start;  
+  align-items: center;          
+  text-align: center;    
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Curriculo h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;       
+  justify-content: flex-start;  
+  align-items: baseline;          
+  text-align: center;    
+}
+.Curriculo p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;       
+  text-align: justify;    
+}
+.Curriculo li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+list-style-position: inside;
+text-align: justify;  
+}
+
+.centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.Curriculo + .Curriculo {
+  margin-top: 2cm;
+}
+>>>>>>> 4701fdd3ca4a70c7b4fb8f117125043e8c3363c7

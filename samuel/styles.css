@@ -1,32 +1,16 @@
 /* styles.css */
 body {
-     background-color: rgb(35, 129, 105);
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  text-align: center;
-}
-
-footer {
-  margin-top: auto;
-  background-color: #0b3d30;
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-  position: sticky;
-  bottom: 0;
-  color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color:rgb(35, 129, 105);
-    color: rgb(0, 0, 0);
-    padding: 80px 20px;
+    background-color: rgb(24, 199, 167);
+    color: rgb(50, 43, 43);
+    padding: 50px 20px;
 }
 
 .botao {
@@ -34,7 +18,7 @@ header {
     margin-top: 20px;
     padding: 50px 20px;
     color: rgb(120, 104, 198);
-    background-color: rgb(35, 129, 105);
+    background-color: rgb(120, 104, 198);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -45,7 +29,7 @@ header {
 
 section {
     padding: 60px 20px;
-    background-color: #13495b;rgb(35, 129, 105);
+    background-color: rgb(120, 104, 198);
     margin: 10px;
     border-radius: 8px;
 }
@@ -61,7 +45,7 @@ section {
     padding: 12px 24px;
     font-size: 16px;
     color: black;
-    background-color: #13495b;rgb(35, 129, 105);
+    background-color: rgb(120, 104, 198);
     border: none;
     border-radius: 8px;
     cursor: pointer;
