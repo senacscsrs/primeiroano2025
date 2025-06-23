@@ -27,6 +27,7 @@ body {
   align-items: center;
   padding: 0 24px;
   z-index: 1000;
+  box-shadow: #22222288;
 }
 
 .menu {
@@ -182,7 +183,7 @@ body {
   margin-top: -35px;
 }
 
-.projects-grid {
+.hyperlinksgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px 30px;
@@ -192,7 +193,7 @@ body {
   justify-items: center;
 }
 
-.project-link {
+.hyperlinks {
   display: inline-block;
   width: 100%;
   padding: 12px 24px;
@@ -217,7 +218,7 @@ body {
   box-sizing: border-box;
 }
 
-.project-link:hover {
+.hyperlinks:hover {
   background-color: rgb(101, 88, 189);
   color: white;
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
@@ -254,7 +255,7 @@ body {
   color: #242424;
 }
 
-.LETTERBOXD {
+.buttonsabt {
   display: inline-block;
   background-color: rgb(160, 146, 250);
   color: #222;
@@ -299,4 +300,27 @@ body {
   margin: -40px;
   font-size: x-large;
   color: black;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os botões */
+  margin-top: 30px;
+  flex-wrap: wrap; /* Para quebrar em telas pequenas */
+}
+
+.button-group button {
+  background-color: #d8cfff;
+  border: 2px solid #333;
+  color: #000;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #c2baff;
 }
