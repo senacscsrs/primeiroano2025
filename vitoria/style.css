@@ -3,33 +3,55 @@
     padding: 2px;
     max-width: 800px;
     margin: auto;
-  }
-  .letras {
+}
+
+.letras {
     font-family: 200px;
     font-size: 19px;
-  }
-  h1 {
+}
+
+h1 {
     text-align: center;
-  }
-  .borda-externa {
+}
+
+.borda-externa {
     border: 4px solid black;
     padding: 10px;
     width: fit-content;
-  }
+}
 
-  .borda-interna {
+.borda-interna {
     border: 2px dashed rgb(0, 0, 0);
     padding: 10px;
     background: #f9f9f9;
-  }
-  .minhaimagem{
+}
+
+.minhaimagem {
     border-radius: 8px;
     padding: 6x;
-  }
-  .imagem-direita {
+}
+
+.imagem-direita {
     position: absolute;
     right: 350px;
     top: 140px;
     width: 200px;
     border-radius: 10px;
-  }
+}
+
+.botaoinicio {
+    position: relative;
+    left: 0px;
+    background-color: #B33791;
+    padding: 10px;
+    margin: 20px auto;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    gap: 20px;
+    display: block;
+    margin: 0;
+     font-family: "Merriweather", serif;
+     text-align: center;
+}
