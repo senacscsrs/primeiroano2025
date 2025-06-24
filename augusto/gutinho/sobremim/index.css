@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    background-color: #000;
+    color: #ff69b4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff1493;
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    color: #ff1493;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #ff69b4;
+}
+
+/* Navegação */
+nav {
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+nav button:hover {
+    background-color: #e60073;
+    transform: scale(1.05);
+}
+
+/* Linha separadora */
+hr {
+    border: none;
+    border-top: 2px solid #ff1493;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff69b4;
+}
+
+main p {
+    font-size: 18px;
+    color: #ffb6c1; /* rosa claro para melhor leitura */
+    background-color: #1a1a1a; /* caixa de fundo levemente destacada */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    line-height: 1.8;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.1);
+    text-align: justify;
+}
