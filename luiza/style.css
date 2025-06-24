@@ -1,10 +1,7 @@
- body {
-            font-family: Arial, sans-serif;
-            background-color: #af92cd;
-            color: #333;
-            margin: 0;
-        }
-        
+body {
+    background-color: #c89adc;
+    color: #591e59;
+}
 
         h1 {
             color: #3e0f5e;
@@ -21,12 +18,6 @@
 
         li {
             margin-bottom: 15px;
-        }
-
-        .gatos {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
         }
 
         .btn {
@@ -163,15 +154,3 @@ header{
 .zoom:hover {
   transform: scale(1.2);
 }
-body.dark {
-  background: #121212;
-  color: #eee;
-}
-
-/* Switch para dark mode */
-.switch {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-.switch input { display: none; }
