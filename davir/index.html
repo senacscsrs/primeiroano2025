@@ -1,54 +1,275 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre Mim</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davi Gabriel Rodrigues</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #730202;
+      --secondary-color: #e50914;
+      --text-light: #ffffff;
+      --text-dark: #333333;
+      --font-main: 'Montserrat', sans-serif;
+    }
 
-  <header class="bg-blue-600 text-white p-6">
-    <h1 class="text-3xl font-bold">Sobre Mim</h1>
-    <p class="text-lg mt-2">Um pouco sobre o que eu gosto</p>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: #f0f0f0;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 1rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+        nav {
+      margin-top: 0.5rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--secondary-color);
+    }
+
+    .hero {
+      background: url('') no-repeat center center/cover;
+      height: 50vh;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: var(--text-light);
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(8, 8, 8, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+    }
+
+    .card-body p {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-body a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--secondary-color);
+      color: var(--text-light);
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-body a:hover {
+      background-color: #b80610;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      nav ul {
+        flex-direction: wrap;
+        align-items: center;
+      }
+
+      .card-body h3 {
+        font-size: 1rem;
+      }
+
+      .card-body p {
+        font-size: 0.9rem;
+      }
+
+      .card-body a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <div class="logo">Ensino Médio <strong>Senac</strong></div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="sobremim.html">Sobre Mim</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="p-6 max-w-4xl mx-auto">
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bem-vindo(a) à minha página</h1>
+      <p>Explore meus projetos. Esta página tem o foco de mostrar e vender meus trabalhos.</p>
+    </div>
+  </section>
 
-    <!-- Séries e Documentários -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">🎬 Séries e Documentários Favoritos</h2>
-      <ul class="space-y-3">
-        <li class="bg-white p-4 rounded shadow">
-          📺 <a href="https://www.youtube.com/watch?v=wtJPe1ksS6E&pp=ygUQZHJpdmUgdG8gc3Vydml2ZQ%3D%3D" target="_blank" class="text-blue-600 hover:underline font-bold">Drive to Survive</a> – A adrenalina da Fórmula 1 nos bastidores.
-        </li>
-        <li class="bg-white p-4 rounded shadow">
-          🎥 <a href="https://www.youtube.com/watch?v=AGT5bUsOPLk&pp=ygUNc2VubmEgbmV0ZmxpeA%3D%3D" target="_blank" class="text-blue-600 hover:underline font-bold">SENNA</a> – O legado de um ídolo brasileiro das pistas.
-        </li>
-        <li class="bg-white p-4 rounded shadow">
-          ⚽ <a href="https://www.youtube.com/watch?v=rbkU7HVuqF0" target="_blank" class="text-blue-600 hover:underline font-bold">Unidos – Manchester City Tricampeão</a> – A jornada do City rumo ao topo da Premier League.
-        </li>
-      </ul>
-    </section>
+  <!-- Seção Projetos -->
+  <section>
+    <h2>Projetos</h2>
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-body">
+          <h3>Projeto 1</h3>
+          <p>Aqui temos o primeiro projeto.</p>
+          <a href="projetos.html">Ver mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>Projeto 2</h3>
+          <p>Aqui temos o segundo projeto.</p>
+          <a href="projetos.html">Ver mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>Projeto 3</h3>
+          <p>Aqui temos o terceiro projeto.</p>
+          <a href="erro.html">Ver mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>Projeto 4</h3>
+          <p>Aqui temos o quarto projeto.</p>
+          <a href="erro.html">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hobbies -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">🎧 Meus Hobbies</h2>
-      <ul class="space-y-3">
-        <li class="bg-white p-4 rounded shadow">
-          🥁 <a href="https://www.youtube.com/results?search_query=como+tocar+bateria" target="_blank" class="text-blue-600 hover:underline font-bold">Tocar bateria</a> – Uma paixão pela música e ritmo.
-        </li>
-        <li class="bg-white p-4 rounded shadow">
-          🏊 <a href="https://www.youtube.com/results?search_query=dicas+de+natação" target="_blank" class="text-blue-600 hover:underline font-bold">Nadar</a> – Liberdade e saúde dentro da água.
-        </li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="bg-blue-600 text-white text-center p-4">
-    <p>&copy; 2025 - Criado por mim 😊</p>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Davi Gabriel Rodrigues.</p>
   </footer>
-
 </body>
 </html>

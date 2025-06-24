@@ -1,0 +1,190 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #04ff00;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: #04ff00;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img.lado-a-lado {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+button {
+    background-color: #04ff00;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.boxpx {
+    width: 300px;
+}
+
+
+.boxporcentagem {
+    width: 50%;
+}
+
+.boxvw {
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.contatos{
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4701fdd3ca4a70c7b4fb8f117125043e8c3363c7
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+<<<<<<< HEAD
+=======
+
+.Curriculo {
+  width: 21cm;
+  height: 33.7cm;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 2cm;
+  box-sizing: border-box;
+  color: black;      
+  border: 3px solid #ccc;
+}
+.Curriculo h1 {
+  font-size: 24px;
+  margin-bottom: 20px;  
+  display: flex;
+  flex-direction: column;       
+  justify-content: flex-start;  
+  align-items: center;          
+  text-align: center;    
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Curriculo h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;       
+  justify-content: flex-start;  
+  align-items: baseline;          
+  text-align: center;    
+}
+.Curriculo p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;       
+  text-align: justify;    
+}
+.Curriculo li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+list-style-position: inside;
+text-align: justify;  
+}
+
+.centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.Curriculo + .Curriculo {
+  margin-top: 2cm;
+}
+>>>>>>> 4701fdd3ca4a70c7b4fb8f117125043e8c3363c7
