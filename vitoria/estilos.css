@@ -1,140 +1,139 @@
-   p{
-            font-size: 20px;
-            color: #A8F1FF;
-            color: black;
-            padding: 20px;
-
-             
-            
-        }
-        .button{
-            background-color:  #A8F1FF;
-            padding: 20px;
-            border-radius: 15px;
-            font-family: 'arial black';
-            float:right
-        }
-    header{
-       
-        background-color: #FFFA8D;
-        border-radius: 8px;
-        
-        
-    }
-    img{
-        
-        background-color:rgb(73, 80, 173);
-        border-radius: 8px;
-        padding: 6x;
-    }
-
-    .cabecalho{
-        padding: 10px;
-        color:  rgb(0, 0, 0);
-
-    }
-
-    
-  .container {
-     
-    display: flex;
-    
-    gap: 10px;
-    
-    
-  }
-  .centro {
-    width: 200px;
-    height: 100px;
-    background: #A8F1FF;
-  }
-  body{ background-color: #FFFA8D;}
+   p {
+     font-size: 20px;
+     color: #A8F1FF;
+     color: black;
+     padding: 20px;
 
 
-  h1{
-    background-color:rgb(73, 80, 173) ;
-    color: white;
-    padding: 40px;
-    font-size: 30px;
-    width: 100%;
-    text-align: center;
-    border-radius: 8px;
 
-    
-  }
-  .coisas{
-    display: flex;
+   }
+
+   .inicio {
+
+     position: relative;
+     left: 10px;
+     background-color: #B33791;
+     padding: 10px;
+     margin: 20px auto;
+     width: 100px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     color: #ffffff;
+     gap: 20px;
+
+   }
 
 
-  }
-  li{
-    font-size: 20px;
-  }
-  .button {
-    background-color: rgb(73, 80, 173);
-    padding: 10x;
+   header {
+
+     background-color: #DB8DD0;
+     border-radius: 8px;
+
+
+   }
+
+   img {
+
+     background-color: #DB8DD0;
+     border-radius: 8px;
+     padding: 6x;
+   }
+
+   .cabecalho {
+     padding: 10px;
+     color: rgb(0, 0, 0);
+
+   }
+
+
+   .container {
+
+     display: flex;
+
+     gap: 10px;
+
+
+   }
+
+   body {
+     background-color: #FEC5F6;
+     padding: 0px;
+     margin: 0;
+     justify-content: center;
+     /* Centraliza na horizontal */
+     align-items: center;
+     /* Centraliza na vertical */
+     height: 100vh;
+     /* Ocupa a altura total da janela */
+      min-height: 100vh;
+      text-align: center; 
+
+
+   }
+
+
+   h1 {
+     color: rgb(255, 255, 255);
+     padding: 40px;
+     font-size: 30px;
+     width: 100%;
+     text-align: center;
+     border-radius: 8px;
+
+
+   }
+
+
+   .button {
+     background-color: #B33791;
+     padding: 15px;
     margin: 20px auto;
-    width: 100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
-    transition: transform 0.2s;
-    text-align: center;
-
-
-  }
-  .botao{
-    background-color:  #A8F1FF;
-            padding: 20px;
-            border-radius: 15px;
-            font-family: 'arial black';
-            float:left;
-            transition: transform 0.2s;
-  }
-.button:hover{
-    transform: scale(1.05);
-}
-.botao:hover{
-    transform: scale(1.1 );
-}
-.emcima{
-    display:flex;
-   
-}
-.imagem{
-  display: flex;
-  justify-content: center;
-
-}
-.junto{
-    background-color: rgb(73, 80, 173);
-    color: white;
-    padding: 20px;
-    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
     width: 100%;
-    text-align: center;
-    border-radius: 8px;
-}
-#insta{
-  position: relative;
-  right: 20px;
-}
-.junto .botao2{
-  
-  background-color:  #ffffff;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-    margin-left: 1200px;
-    border-radius: 30px;
-    font-family: 'arial black';
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    color: #FEC5F6;
     transition: transform 0.2s;
-    color: black;
-   
- 
-  }
-  .botao2:hover{
-      transform: scale(1.1 );
-  }
-}
+    font-family: "Merriweather", serif;
+    text-align: center;
+
+
+   }
+
+   .imagem {
+     display: flex;
+     justify-content: center;
+
+   }
+
+
+   #insta {
+     position: relative;
+     right: 20px;
+   }
+
+   .botao{
+    background-color: #B33791;
+     padding: 20px;
+     margin: 40px auto;
+     width: 100px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     color: #ffffff;
+     text-align: center;
+     margin-top: 20px;
+   }
+
+   .botaoinicio {
+     background-color: #B33791;
+     padding: 20px;
+     margin: 40px auto;
+     width: 100px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     color: #ffffff;
+     text-align: left;
+     margin-top: 20px;
+
+   }
