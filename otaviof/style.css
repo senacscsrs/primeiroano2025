@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header com logo */
 header {
   background-color: #2563eb;
   color: white;
@@ -31,6 +33,7 @@ header h1 {
   font-size: 28px;
 }
 
+/* Navegação */
 nav {
   background-color: #1d4ed8;
   padding: 10px;
@@ -51,6 +54,7 @@ nav a:hover {
   background-color: #3b82f6;
 }
 
+/* Área principal */
 main {
   max-width: 1000px;
   margin: 40px auto;
@@ -60,6 +64,16 @@ main {
   box-shadow: 0 0 15px rgba(0,0,0,0.08);
 }
 
+h1, h2 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Seção bio (página inicial) */
 .bio {
   margin-bottom: 40px;
 }
@@ -74,6 +88,7 @@ main {
   font-size: 18px;
 }
 
+/* Cards iniciais da página inicial */
 .atalhos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -124,6 +139,7 @@ main {
   background-color: #1e3a8a;
 }
 
+/* Botão de contato na home */
 .botao-contato {
   display: inline-block;
   background-color: #1e40af;
@@ -133,13 +149,100 @@ main {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .botao-contato:hover {
   background-color: #1d2f6f;
+  transform: translateY(-2px);
 }
 
+/* Formulário de contato */
+form {
+  background-color: #f1f5ff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #1e3a8a;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+  outline: none;
+}
+
+form button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Trabalhos (Meus Projetos) */
+.trabalhos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.trabalho {
+  background-color: #e0e7ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trabalho:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trabalho i {
+  font-size: 36px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.trabalho h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.trabalho p {
+  font-size: 15px;
+}
+
+/* Rodapé */
 footer {
   background-color: #2563eb;
   color: white;
