@@ -52,14 +52,15 @@
    body {
      font-family: Arial, sans-serif;
      padding: 20px;
+     background-color: #FEC5F6;
    }
 
    .container {
      margin: 0 auto;
      padding: 20px;
-     border: 1px solid #ccc;
+     border: 1px solid #FEC5F6;
      border-radius: 5px;
-     background-color: #f9f9f9;
+     background-color: #FEC5F6;
    }
 
 
@@ -110,6 +111,7 @@
      justify-content: center;
      align-items: center;
      gap: 60px;
+     color: #B33791;
      
 
    }
@@ -153,4 +155,7 @@
      padding: center;
      border-radius: 10px;
      margin: auto;
+     font-size: 40px;
+    color: #DB8DD0;
+
    }
