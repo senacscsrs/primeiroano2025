@@ -50,10 +50,8 @@
 
 
    .container {
-
-     display: flex;
-
-     gap: 10px;
+     margin: auto;
+   
 
 
    }
@@ -64,6 +62,8 @@
      margin: 10px;
      justify-content: center;
      align-items: center;
+     display: block;
+
 
 
    }
@@ -160,4 +160,13 @@
      padding: 10px;
      background-color: #FEC5F6;
      border-radius: 10px;
+   }
+
+   .caixa {
+     background-color: #B33791;
+     width: 300px;
+     height: 60px;
+     padding: center;
+     border-radius: 10px;
+     margin: 10px;
    }
